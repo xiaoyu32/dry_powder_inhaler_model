@@ -1,0 +1,1260 @@
+
+//   log_compileLIGGGHTS-2014-03-31-12:06   //
+
+/home/hema2/aozel/CFDEM/LIGGGHTS_v3/src
+
+rm -rf Obj_*
+make[1]: Entering directory `/home/hema2/aozel/CFDEM/LIGGGHTS_v3/src/Obj_hema_2.2.x'
+Makefile:97: angle.d: No such file or directory
+Makefile:97: angle_hybrid.d: No such file or directory
+Makefile:97: atom.d: No such file or directory
+Makefile:97: atom_map.d: No such file or directory
+Makefile:97: atom_vec_atomic.d: No such file or directory
+Makefile:97: atom_vec_body.d: No such file or directory
+Makefile:97: atom_vec_charge.d: No such file or directory
+Makefile:97: atom_vec.d: No such file or directory
+Makefile:97: atom_vec_ellipsoid.d: No such file or directory
+Makefile:97: atom_vec_hybrid.d: No such file or directory
+Makefile:97: atom_vec_line.d: No such file or directory
+Makefile:97: atom_vec_sph.d: No such file or directory
+Makefile:97: atom_vec_sphere.d: No such file or directory
+Makefile:97: atom_vec_sphere_w.d: No such file or directory
+Makefile:97: atom_vec_sph_var.d: No such file or directory
+Makefile:97: atom_vec_tri.d: No such file or directory
+Makefile:97: body.d: No such file or directory
+Makefile:97: bond.d: No such file or directory
+Makefile:97: bond_hybrid.d: No such file or directory
+Makefile:97: bounding_box.d: No such file or directory
+Makefile:97: cfd_datacoupling.d: No such file or directory
+Makefile:97: cfd_datacoupling_file.d: No such file or directory
+Makefile:97: cfd_datacoupling_mpi.d: No such file or directory
+Makefile:97: cfd_regionmodel_none.d: No such file or directory
+Makefile:97: change_box.d: No such file or directory
+Makefile:97: citeme.d: No such file or directory
+Makefile:97: comm.d: No such file or directory
+Makefile:97: compute_angle_local.d: No such file or directory
+Makefile:97: compute_atom_molecule.d: No such file or directory
+Makefile:97: compute_bond_local.d: No such file or directory
+Makefile:97: compute_centro_atom.d: No such file or directory
+Makefile:97: compute_cluster_atom.d: No such file or directory
+Makefile:97: compute_cna_atom.d: No such file or directory
+Makefile:97: compute_com.d: No such file or directory
+Makefile:97: compute_com_molecule.d: No such file or directory
+Makefile:97: compute_contact_atom.d: No such file or directory
+Makefile:97: compute_coord_atom.d: No such file or directory
+Makefile:97: compute.d: No such file or directory
+Makefile:97: compute_dihedral_local.d: No such file or directory
+Makefile:97: compute_displace_atom.d: No such file or directory
+Makefile:97: compute_erotate_rigid.d: No such file or directory
+Makefile:97: compute_erotate_sphere_atom.d: No such file or directory
+Makefile:97: compute_erotate_sphere.d: No such file or directory
+Makefile:97: compute_group_group.d: No such file or directory
+Makefile:97: compute_gyration.d: No such file or directory
+Makefile:97: compute_gyration_molecule.d: No such file or directory
+Makefile:97: compute_heat_flux.d: No such file or directory
+Makefile:97: compute_improper_local.d: No such file or directory
+Makefile:97: compute_inertia_molecule.d: No such file or directory
+Makefile:97: compute_ke_atom.d: No such file or directory
+Makefile:97: compute_ke.d: No such file or directory
+Makefile:97: compute_ke_rigid.d: No such file or directory
+Makefile:97: compute_msd.d: No such file or directory
+Makefile:97: compute_msd_molecule.d: No such file or directory
+Makefile:97: compute_nparticles_tracer_region.d: No such file or directory
+Makefile:97: compute_pair.d: No such file or directory
+Makefile:97: compute_pair_gran_local.d: No such file or directory
+Makefile:97: compute_pair_local.d: No such file or directory
+Makefile:97: compute_pe_atom.d: No such file or directory
+Makefile:97: compute_pe.d: No such file or directory
+Makefile:97: compute_pressure.d: No such file or directory
+Makefile:97: compute_property_atom.d: No such file or directory
+Makefile:97: compute_property_local.d: No such file or directory
+Makefile:97: compute_property_molecule.d: No such file or directory
+Makefile:97: compute_rdf.d: No such file or directory
+Makefile:97: compute_reduce.d: No such file or directory
+Makefile:97: compute_reduce_region.d: No such file or directory
+Makefile:97: compute_slice.d: No such file or directory
+Makefile:97: compute_stress_atom.d: No such file or directory
+Makefile:97: compute_temp_com.d: No such file or directory
+Makefile:97: compute_temp.d: No such file or directory
+Makefile:97: compute_temp_deform.d: No such file or directory
+Makefile:97: compute_temp_partial.d: No such file or directory
+Makefile:97: compute_temp_profile.d: No such file or directory
+Makefile:97: compute_temp_ramp.d: No such file or directory
+Makefile:97: compute_temp_region.d: No such file or directory
+Makefile:97: compute_temp_sphere.d: No such file or directory
+Makefile:97: compute_vacf.d: No such file or directory
+Makefile:97: container_base.d: No such file or directory
+Makefile:97: create_atoms.d: No such file or directory
+Makefile:97: create_box.d: No such file or directory
+Makefile:97: custom_value_tracker.d: No such file or directory
+Makefile:97: delete_atoms.d: No such file or directory
+Makefile:97: delete_bonds.d: No such file or directory
+Makefile:97: dihedral.d: No such file or directory
+Makefile:97: dihedral_hybrid.d: No such file or directory
+Makefile:97: displace_atoms.d: No such file or directory
+Makefile:97: domain.d: No such file or directory
+Makefile:97: dump_atom.d: No such file or directory
+Makefile:97: dump_atom_vtk.d: No such file or directory
+Makefile:97: dump_cfg.d: No such file or directory
+Makefile:97: dump.d: No such file or directory
+Makefile:97: dump_custom.d: No such file or directory
+Makefile:97: dump_dcd.d: No such file or directory
+Makefile:97: dump_decomposition_vtk.d: No such file or directory
+Makefile:97: dump_euler_vtk.d: No such file or directory
+Makefile:97: dump_image.d: No such file or directory
+Makefile:97: dump_local.d: No such file or directory
+Makefile:97: dump_mesh_stl.d: No such file or directory
+Makefile:97: dump_mesh_vtk.d: No such file or directory
+Makefile:97: dump_movie.d: No such file or directory
+Makefile:97: dump_xyz.d: No such file or directory
+Makefile:97: error.d: No such file or directory
+Makefile:97: finish.d: No such file or directory
+Makefile:97: fix_adapt.d: No such file or directory
+Makefile:97: fix_addforce.d: No such file or directory
+Makefile:97: fix_ave_atom.d: No such file or directory
+Makefile:97: fix_ave_correlate.d: No such file or directory
+Makefile:97: fix_ave_euler.d: No such file or directory
+Makefile:97: fix_aveforce.d: No such file or directory
+Makefile:97: fix_ave_histo.d: No such file or directory
+Makefile:97: fix_ave_spatial.d: No such file or directory
+Makefile:97: fix_ave_time.d: No such file or directory
+Makefile:97: fix_box_relax.d: No such file or directory
+Makefile:97: fix_cfd_coupling_convection.d: No such file or directory
+Makefile:97: fix_cfd_coupling.d: No such file or directory
+Makefile:97: fix_cfd_coupling_force.d: No such file or directory
+Makefile:97: fix_cfd_coupling_force_implicit.d: No such file or directory
+Makefile:97: fix_check_timestep_gran.d: No such file or directory
+Makefile:97: fix_check_timestep_sph.d: No such file or directory
+Makefile:97: fix_contact_history.d: No such file or directory
+Makefile:97: fix_contact_history_mesh.d: No such file or directory
+Makefile:97: fix.d: No such file or directory
+Makefile:97: fix_deform.d: No such file or directory
+Makefile:97: fix_deposit.d: No such file or directory
+Makefile:97: fix_drag.d: No such file or directory
+Makefile:97: fix_dt_reset.d: No such file or directory
+Makefile:97: fix_enforce2d.d: No such file or directory
+Makefile:97: fix_external.d: No such file or directory
+Makefile:97: fix_freeze.d: No such file or directory
+Makefile:97: fix_gravity.d: No such file or directory
+Makefile:97: fix_heat.d: No such file or directory
+Makefile:97: fix_heat_gran_conduction.d: No such file or directory
+Makefile:97: fix_heat_gran.d: No such file or directory
+Makefile:97: fix_indent.d: No such file or directory
+Makefile:97: fix_insert.d: No such file or directory
+Makefile:97: fix_insert_pack.d: No such file or directory
+Makefile:97: fix_insert_rate_region.d: No such file or directory
+Makefile:97: fix_insert_stream.d: No such file or directory
+Makefile:97: fix_langevin.d: No such file or directory
+Makefile:97: fix_lineforce.d: No such file or directory
+Makefile:97: fix_liquidtracking.d: No such file or directory
+Makefile:97: fix_liquidtracking_instant.d: No such file or directory
+Makefile:97: fix_liquidtransfer.d: No such file or directory
+Makefile:97: fix_massflow_mesh.d: No such file or directory
+Makefile:97: fix_mesh.d: No such file or directory
+Makefile:97: fix_mesh_surface.d: No such file or directory
+Makefile:97: fix_mesh_surface_stress.d: No such file or directory
+Makefile:97: fix_mesh_surface_stress_servo.d: No such file or directory
+Makefile:97: fix_minimize.d: No such file or directory
+Makefile:97: fix_momentum.d: No such file or directory
+Makefile:97: fix_move.d: No such file or directory
+Makefile:97: fix_move_mesh.d: No such file or directory
+Makefile:97: fix_neighlist_mesh.d: No such file or directory
+Makefile:97: fix_nh.d: No such file or directory
+Makefile:97: fix_nh_sphere.d: No such file or directory
+Makefile:97: fix_nph.d: No such file or directory
+Makefile:97: fix_nph_sphere.d: No such file or directory
+Makefile:97: fix_npt.d: No such file or directory
+Makefile:97: fix_npt_sphere.d: No such file or directory
+Makefile:97: fix_nve.d: No such file or directory
+Makefile:97: fix_nve_limit.d: No such file or directory
+Makefile:97: fix_nve_noforce.d: No such file or directory
+Makefile:97: fix_nve_sph.d: No such file or directory
+Makefile:97: fix_nve_sphere.d: No such file or directory
+Makefile:97: fix_nve_sph_stationary.d: No such file or directory
+Makefile:97: fix_nvt.d: No such file or directory
+Makefile:97: fix_nvt_sllod.d: No such file or directory
+Makefile:97: fix_nvt_sphere.d: No such file or directory
+Makefile:97: fix_particledistribution_discrete.d: No such file or directory
+Makefile:97: fix_planeforce.d: No such file or directory
+Makefile:97: fix_pour.d: No such file or directory
+Makefile:97: fix_press_berendsen.d: No such file or directory
+Makefile:97: fix_print.d: No such file or directory
+Makefile:97: fix_property_atom.d: No such file or directory
+Makefile:97: fix_property_atom_tracer.d: No such file or directory
+Makefile:97: fix_property_atom_tracer_stream.d: No such file or directory
+Makefile:97: fix_property_global.d: No such file or directory
+Makefile:97: fix_read_restart.d: No such file or directory
+Makefile:97: fix_recenter.d: No such file or directory
+Makefile:97: fix_region_variable.d: No such file or directory
+Makefile:97: fix_respa.d: No such file or directory
+Makefile:97: fix_restrain.d: No such file or directory
+Makefile:97: fix_rigid.d: No such file or directory
+Makefile:97: fix_rigid_nh.d: No such file or directory
+Makefile:97: fix_rigid_nph.d: No such file or directory
+Makefile:97: fix_rigid_npt.d: No such file or directory
+Makefile:97: fix_rigid_nve.d: No such file or directory
+Makefile:97: fix_rigid_nvt.d: No such file or directory
+Makefile:97: fix_rigid_small.d: No such file or directory
+Makefile:97: fix_scalar_transport_equation.d: No such file or directory
+Makefile:97: fix_setforce.d: No such file or directory
+Makefile:97: fix_shake.d: No such file or directory
+Makefile:97: fix_shear_history.d: No such file or directory
+Makefile:97: fix_sph.d: No such file or directory
+Makefile:97: fix_sph_density_continuity.d: No such file or directory
+Makefile:97: fix_sph_density_corr.d: No such file or directory
+Makefile:97: fix_sph_density_summation.d: No such file or directory
+Makefile:97: fix_sph_pressure.d: No such file or directory
+Makefile:97: fix_spring.d: No such file or directory
+Makefile:97: fix_spring_rg.d: No such file or directory
+Makefile:97: fix_spring_self.d: No such file or directory
+Makefile:97: fix_store.d: No such file or directory
+Makefile:97: fix_store_force.d: No such file or directory
+Makefile:97: fix_store_state.d: No such file or directory
+Makefile:97: fix_temp_berendsen.d: No such file or directory
+Makefile:97: fix_template_multiplespheres.d: No such file or directory
+Makefile:97: fix_template_sphere.d: No such file or directory
+Makefile:97: fix_temp_rescale.d: No such file or directory
+Makefile:97: fix_tmd.d: No such file or directory
+Makefile:97: fix_viscous.d: No such file or directory
+Makefile:97: fix_wall.d: No such file or directory
+Makefile:97: fix_wall_gran.d: No such file or directory
+Makefile:97: fix_wall_harmonic.d: No such file or directory
+Makefile:97: fix_wall_lj1043.d: No such file or directory
+Makefile:97: fix_wall_lj126.d: No such file or directory
+Makefile:97: fix_wall_lj93.d: No such file or directory
+Makefile:97: fix_wall_reflect.d: No such file or directory
+Makefile:97: fix_wall_region.d: No such file or directory
+Makefile:97: fix_wall_region_sph.d: No such file or directory
+Makefile:97: fix_wall_sph.d: No such file or directory
+Makefile:97: force.d: No such file or directory
+Makefile:97: global_properties.d: No such file or directory
+Makefile:97: group.d: No such file or directory
+Makefile:97: image.d: No such file or directory
+Makefile:97: improper.d: No such file or directory
+Makefile:97: improper_hybrid.d: No such file or directory
+Makefile:97: input.d: No such file or directory
+Makefile:97: input_mesh_tet.d: No such file or directory
+Makefile:97: input_mesh_tri.d: No such file or directory
+Makefile:97: input_multisphere.d: No such file or directory
+Makefile:97: integrate.d: No such file or directory
+Makefile:97: irregular.d: No such file or directory
+Makefile:97: kspace.d: No such file or directory
+Makefile:97: lammps.d: No such file or directory
+Makefile:97: lattice.d: No such file or directory
+Makefile:97: library_cfd_coupling.d: No such file or directory
+Makefile:97: library.d: No such file or directory
+Makefile:97: main.d: No such file or directory
+Makefile:97: math_extra.d: No such file or directory
+Makefile:97: mech_param_gran.d: No such file or directory
+Makefile:97: memory.d: No such file or directory
+Makefile:97: mesh_mover.d: No such file or directory
+Makefile:97: min_cg.d: No such file or directory
+Makefile:97: min.d: No such file or directory
+Makefile:97: min_fire.d: No such file or directory
+Makefile:97: min_hftn.d: No such file or directory
+Makefile:97: minimize.d: No such file or directory
+Makefile:97: min_linesearch.d: No such file or directory
+Makefile:97: min_quickmin.d: No such file or directory
+Makefile:97: min_sd.d: No such file or directory
+Makefile:97: modified_andrew.d: No such file or directory
+Makefile:97: modify.d: No such file or directory
+Makefile:97: modify_liggghts.d: No such file or directory
+Makefile:97: neigh_bond.d: No such file or directory
+Makefile:97: neighbor.d: No such file or directory
+Makefile:97: neigh_derive.d: No such file or directory
+Makefile:97: neigh_dummy.d: No such file or directory
+Makefile:97: neigh_full.d: No such file or directory
+Makefile:97: neigh_gran.d: No such file or directory
+Makefile:97: neigh_half_bin.d: No such file or directory
+Makefile:97: neigh_half_multi.d: No such file or directory
+Makefile:97: neigh_half_nsq.d: No such file or directory
+Makefile:97: neigh_list.d: No such file or directory
+Makefile:97: neigh_request.d: No such file or directory
+Makefile:97: neigh_respa.d: No such file or directory
+Makefile:97: neigh_stencil.d: No such file or directory
+Makefile:97: output.d: No such file or directory
+Makefile:97: pair_beck.d: No such file or directory
+Makefile:97: pair_born_coul_wolf.d: No such file or directory
+Makefile:97: pair_born.d: No such file or directory
+Makefile:97: pair_buck_coul_cut.d: No such file or directory
+Makefile:97: pair_buck.d: No such file or directory
+Makefile:97: pair_coul_cut.d: No such file or directory
+Makefile:97: pair_coul_debye.d: No such file or directory
+Makefile:97: pair_coul_dsf.d: No such file or directory
+Makefile:97: pair_coul_wolf.d: No such file or directory
+Makefile:97: pair.d: No such file or directory
+Makefile:97: pair_dpd.d: No such file or directory
+Makefile:97: pair_dpd_tstat.d: No such file or directory
+Makefile:97: pair_gauss.d: No such file or directory
+Makefile:97: pair_gran.d: No such file or directory
+Makefile:97: pair_hybrid.d: No such file or directory
+Makefile:97: pair_hybrid_overlay.d: No such file or directory
+Makefile:97: pair_lj96_cut.d: No such file or directory
+Makefile:97: pair_lj_cubic.d: No such file or directory
+Makefile:97: pair_lj_cut_coul_cut.d: No such file or directory
+Makefile:97: pair_lj_cut_coul_debye.d: No such file or directory
+Makefile:97: pair_lj_cut_coul_dsf.d: No such file or directory
+Makefile:97: pair_lj_cut.d: No such file or directory
+Makefile:97: pair_lj_expand.d: No such file or directory
+Makefile:97: pair_lj_gromacs_coul_gromacs.d: No such file or directory
+Makefile:97: pair_lj_gromacs.d: No such file or directory
+Makefile:97: pair_lj_smooth.d: No such file or directory
+Makefile:97: pair_lj_smooth_linear.d: No such file or directory
+Makefile:97: pair_mie_cut.d: No such file or directory
+Makefile:97: pair_morse.d: No such file or directory
+Makefile:97: pair_soft.d: No such file or directory
+Makefile:97: pair_sph_artvisc_tenscorr.d: No such file or directory
+Makefile:97: pair_sph.d: No such file or directory
+Makefile:97: pair_table.d: No such file or directory
+Makefile:97: pair_yukawa.d: No such file or directory
+Makefile:97: pair_zbl.d: No such file or directory
+Makefile:97: particleToInsert.d: No such file or directory
+Makefile:97: procmap.d: No such file or directory
+Makefile:97: property_registry.d: No such file or directory
+Makefile:97: random_mars.d: No such file or directory
+Makefile:97: random_park.d: No such file or directory
+Makefile:97: read_data.d: No such file or directory
+Makefile:97: read_dump.d: No such file or directory
+Makefile:97: reader.d: No such file or directory
+Makefile:97: reader_native.d: No such file or directory
+Makefile:97: reader_xyz.d: No such file or directory
+Makefile:97: read_restart.d: No such file or directory
+Makefile:97: region_block.d: No such file or directory
+Makefile:97: region_cone.d: No such file or directory
+Makefile:97: region.d: No such file or directory
+Makefile:97: region_cylinder.d: No such file or directory
+Makefile:97: region_intersect.d: No such file or directory
+Makefile:97: region_mesh_tet.d: No such file or directory
+Makefile:97: region_plane.d: No such file or directory
+Makefile:97: region_prism.d: No such file or directory
+Makefile:97: region_sphere.d: No such file or directory
+Makefile:97: region_union.d: No such file or directory
+Makefile:97: region_wedge.d: No such file or directory
+Makefile:97: replicate.d: No such file or directory
+Makefile:97: rerun.d: No such file or directory
+Makefile:97: respa.d: No such file or directory
+Makefile:97: run.d: No such file or directory
+Makefile:97: set.d: No such file or directory
+Makefile:97: special.d: No such file or directory
+Makefile:97: thermo.d: No such file or directory
+Makefile:97: timer.d: No such file or directory
+Makefile:97: tri_mesh.d: No such file or directory
+Makefile:97: tri_mesh_planar.d: No such file or directory
+Makefile:97: universe.d: No such file or directory
+Makefile:97: update.d: No such file or directory
+Makefile:97: variable.d: No such file or directory
+Makefile:97: velocity.d: No such file or directory
+Makefile:97: verlet.d: No such file or directory
+Makefile:97: verlet_implicit.d: No such file or directory
+Makefile:97: write_data.d: No such file or directory
+Makefile:97: write_dump.d: No such file or directory
+Makefile:97: write_restart.d: No such file or directory
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M write_restart.cpp > write_restart.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M write_dump.cpp > write_dump.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M write_data.cpp > write_data.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M verlet_implicit.cpp > verlet_implicit.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M verlet.cpp > verlet.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M velocity.cpp > velocity.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M variable.cpp > variable.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M update.cpp > update.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M universe.cpp > universe.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M tri_mesh_planar.cpp > tri_mesh_planar.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M tri_mesh.cpp > tri_mesh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M timer.cpp > timer.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M thermo.cpp > thermo.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M special.cpp > special.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M set.cpp > set.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M run.cpp > run.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M respa.cpp > respa.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M rerun.cpp > rerun.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M replicate.cpp > replicate.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_wedge.cpp > region_wedge.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_union.cpp > region_union.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_sphere.cpp > region_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_prism.cpp > region_prism.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_plane.cpp > region_plane.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_mesh_tet.cpp > region_mesh_tet.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_intersect.cpp > region_intersect.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_cylinder.cpp > region_cylinder.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region.cpp > region.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_cone.cpp > region_cone.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M region_block.cpp > region_block.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M read_restart.cpp > read_restart.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M reader_xyz.cpp > reader_xyz.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M reader_native.cpp > reader_native.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M reader.cpp > reader.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M read_dump.cpp > read_dump.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M read_data.cpp > read_data.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M random_park.cpp > random_park.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M random_mars.cpp > random_mars.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M property_registry.cpp > property_registry.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M procmap.cpp > procmap.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M particleToInsert.cpp > particleToInsert.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_zbl.cpp > pair_zbl.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_yukawa.cpp > pair_yukawa.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_table.cpp > pair_table.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_sph.cpp > pair_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_sph_artvisc_tenscorr.cpp > pair_sph_artvisc_tenscorr.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_soft.cpp > pair_soft.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_morse.cpp > pair_morse.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_mie_cut.cpp > pair_mie_cut.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_smooth_linear.cpp > pair_lj_smooth_linear.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_smooth.cpp > pair_lj_smooth.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_gromacs.cpp > pair_lj_gromacs.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_gromacs_coul_gromacs.cpp > pair_lj_gromacs_coul_gromacs.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_expand.cpp > pair_lj_expand.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_cut.cpp > pair_lj_cut.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_cut_coul_dsf.cpp > pair_lj_cut_coul_dsf.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_cut_coul_debye.cpp > pair_lj_cut_coul_debye.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_cut_coul_cut.cpp > pair_lj_cut_coul_cut.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj_cubic.cpp > pair_lj_cubic.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_lj96_cut.cpp > pair_lj96_cut.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_hybrid_overlay.cpp > pair_hybrid_overlay.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_hybrid.cpp > pair_hybrid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_gran.cpp > pair_gran.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_gauss.cpp > pair_gauss.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_dpd_tstat.cpp > pair_dpd_tstat.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_dpd.cpp > pair_dpd.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair.cpp > pair.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_coul_wolf.cpp > pair_coul_wolf.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_coul_dsf.cpp > pair_coul_dsf.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_coul_debye.cpp > pair_coul_debye.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_coul_cut.cpp > pair_coul_cut.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_buck.cpp > pair_buck.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_buck_coul_cut.cpp > pair_buck_coul_cut.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_born.cpp > pair_born.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_born_coul_wolf.cpp > pair_born_coul_wolf.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M pair_beck.cpp > pair_beck.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M output.cpp > output.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_stencil.cpp > neigh_stencil.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_respa.cpp > neigh_respa.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_request.cpp > neigh_request.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_list.cpp > neigh_list.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_half_nsq.cpp > neigh_half_nsq.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_half_multi.cpp > neigh_half_multi.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_half_bin.cpp > neigh_half_bin.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_gran.cpp > neigh_gran.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_full.cpp > neigh_full.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_dummy.cpp > neigh_dummy.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_derive.cpp > neigh_derive.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neighbor.cpp > neighbor.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M neigh_bond.cpp > neigh_bond.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M modify_liggghts.cpp > modify_liggghts.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M modify.cpp > modify.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M modified_andrew.cpp > modified_andrew.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min_sd.cpp > min_sd.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min_quickmin.cpp > min_quickmin.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min_linesearch.cpp > min_linesearch.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M minimize.cpp > minimize.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min_hftn.cpp > min_hftn.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min_fire.cpp > min_fire.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min.cpp > min.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M min_cg.cpp > min_cg.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M mesh_mover.cpp > mesh_mover.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M memory.cpp > memory.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M mech_param_gran.cpp > mech_param_gran.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M math_extra.cpp > math_extra.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M main.cpp > main.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M library.cpp > library.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M library_cfd_coupling.cpp > library_cfd_coupling.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M lattice.cpp > lattice.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M lammps.cpp > lammps.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M kspace.cpp > kspace.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M irregular.cpp > irregular.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M integrate.cpp > integrate.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M input_multisphere.cpp > input_multisphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M input_mesh_tri.cpp > input_mesh_tri.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M input_mesh_tet.cpp > input_mesh_tet.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M input.cpp > input.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M improper_hybrid.cpp > improper_hybrid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M improper.cpp > improper.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M image.cpp > image.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M group.cpp > group.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M global_properties.cpp > global_properties.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M force.cpp > force.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_sph.cpp > fix_wall_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_region_sph.cpp > fix_wall_region_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_region.cpp > fix_wall_region.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_reflect.cpp > fix_wall_reflect.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_lj93.cpp > fix_wall_lj93.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_lj126.cpp > fix_wall_lj126.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_lj1043.cpp > fix_wall_lj1043.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_harmonic.cpp > fix_wall_harmonic.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall_gran.cpp > fix_wall_gran.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_wall.cpp > fix_wall.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_viscous.cpp > fix_viscous.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_tmd.cpp > fix_tmd.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_temp_rescale.cpp > fix_temp_rescale.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_template_sphere.cpp > fix_template_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_template_multiplespheres.cpp > fix_template_multiplespheres.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_temp_berendsen.cpp > fix_temp_berendsen.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_store_state.cpp > fix_store_state.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_store_force.cpp > fix_store_force.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_store.cpp > fix_store.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_spring_self.cpp > fix_spring_self.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_spring_rg.cpp > fix_spring_rg.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_spring.cpp > fix_spring.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_sph_pressure.cpp > fix_sph_pressure.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_sph_density_summation.cpp > fix_sph_density_summation.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_sph_density_corr.cpp > fix_sph_density_corr.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_sph_density_continuity.cpp > fix_sph_density_continuity.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_sph.cpp > fix_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_shear_history.cpp > fix_shear_history.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_shake.cpp > fix_shake.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_setforce.cpp > fix_setforce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_scalar_transport_equation.cpp > fix_scalar_transport_equation.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid_small.cpp > fix_rigid_small.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid_nvt.cpp > fix_rigid_nvt.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid_nve.cpp > fix_rigid_nve.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid_npt.cpp > fix_rigid_npt.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid_nph.cpp > fix_rigid_nph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid_nh.cpp > fix_rigid_nh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_rigid.cpp > fix_rigid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_restrain.cpp > fix_restrain.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_respa.cpp > fix_respa.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_region_variable.cpp > fix_region_variable.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_recenter.cpp > fix_recenter.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_read_restart.cpp > fix_read_restart.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_property_global.cpp > fix_property_global.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_property_atom_tracer_stream.cpp > fix_property_atom_tracer_stream.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_property_atom_tracer.cpp > fix_property_atom_tracer.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_property_atom.cpp > fix_property_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_print.cpp > fix_print.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_press_berendsen.cpp > fix_press_berendsen.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_pour.cpp > fix_pour.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_planeforce.cpp > fix_planeforce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_particledistribution_discrete.cpp > fix_particledistribution_discrete.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nvt_sphere.cpp > fix_nvt_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nvt_sllod.cpp > fix_nvt_sllod.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nvt.cpp > fix_nvt.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nve_sph_stationary.cpp > fix_nve_sph_stationary.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nve_sphere.cpp > fix_nve_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nve_sph.cpp > fix_nve_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nve_noforce.cpp > fix_nve_noforce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nve_limit.cpp > fix_nve_limit.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nve.cpp > fix_nve.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_npt_sphere.cpp > fix_npt_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_npt.cpp > fix_npt.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nph_sphere.cpp > fix_nph_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nph.cpp > fix_nph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nh_sphere.cpp > fix_nh_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_nh.cpp > fix_nh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_neighlist_mesh.cpp > fix_neighlist_mesh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_move_mesh.cpp > fix_move_mesh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_move.cpp > fix_move.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_momentum.cpp > fix_momentum.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_minimize.cpp > fix_minimize.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_mesh_surface_stress_servo.cpp > fix_mesh_surface_stress_servo.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_mesh_surface_stress.cpp > fix_mesh_surface_stress.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_mesh_surface.cpp > fix_mesh_surface.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_mesh.cpp > fix_mesh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_massflow_mesh.cpp > fix_massflow_mesh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_liquidtransfer.cpp > fix_liquidtransfer.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_liquidtracking_instant.cpp > fix_liquidtracking_instant.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_liquidtracking.cpp > fix_liquidtracking.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_lineforce.cpp > fix_lineforce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_langevin.cpp > fix_langevin.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_insert_stream.cpp > fix_insert_stream.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_insert_rate_region.cpp > fix_insert_rate_region.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_insert_pack.cpp > fix_insert_pack.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_insert.cpp > fix_insert.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_indent.cpp > fix_indent.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_heat_gran.cpp > fix_heat_gran.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_heat_gran_conduction.cpp > fix_heat_gran_conduction.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_heat.cpp > fix_heat.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_gravity.cpp > fix_gravity.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_freeze.cpp > fix_freeze.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_external.cpp > fix_external.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_enforce2d.cpp > fix_enforce2d.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_dt_reset.cpp > fix_dt_reset.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_drag.cpp > fix_drag.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_deposit.cpp > fix_deposit.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_deform.cpp > fix_deform.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix.cpp > fix.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_contact_history_mesh.cpp > fix_contact_history_mesh.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_contact_history.cpp > fix_contact_history.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_check_timestep_sph.cpp > fix_check_timestep_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_check_timestep_gran.cpp > fix_check_timestep_gran.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_cfd_coupling_force_implicit.cpp > fix_cfd_coupling_force_implicit.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_cfd_coupling_force.cpp > fix_cfd_coupling_force.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_cfd_coupling.cpp > fix_cfd_coupling.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_cfd_coupling_convection.cpp > fix_cfd_coupling_convection.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_box_relax.cpp > fix_box_relax.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_ave_time.cpp > fix_ave_time.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_ave_spatial.cpp > fix_ave_spatial.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_ave_histo.cpp > fix_ave_histo.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_aveforce.cpp > fix_aveforce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_ave_euler.cpp > fix_ave_euler.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_ave_correlate.cpp > fix_ave_correlate.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_ave_atom.cpp > fix_ave_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_addforce.cpp > fix_addforce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M fix_adapt.cpp > fix_adapt.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M finish.cpp > finish.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M error.cpp > error.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_xyz.cpp > dump_xyz.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_movie.cpp > dump_movie.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_mesh_vtk.cpp > dump_mesh_vtk.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_mesh_stl.cpp > dump_mesh_stl.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_local.cpp > dump_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_image.cpp > dump_image.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_euler_vtk.cpp > dump_euler_vtk.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_decomposition_vtk.cpp > dump_decomposition_vtk.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_dcd.cpp > dump_dcd.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_custom.cpp > dump_custom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump.cpp > dump.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_cfg.cpp > dump_cfg.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_atom_vtk.cpp > dump_atom_vtk.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dump_atom.cpp > dump_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M domain.cpp > domain.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M displace_atoms.cpp > displace_atoms.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dihedral_hybrid.cpp > dihedral_hybrid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M dihedral.cpp > dihedral.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M delete_bonds.cpp > delete_bonds.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M delete_atoms.cpp > delete_atoms.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M custom_value_tracker.cpp > custom_value_tracker.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M create_box.cpp > create_box.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M create_atoms.cpp > create_atoms.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M container_base.cpp > container_base.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_vacf.cpp > compute_vacf.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_sphere.cpp > compute_temp_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_region.cpp > compute_temp_region.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_ramp.cpp > compute_temp_ramp.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_profile.cpp > compute_temp_profile.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_partial.cpp > compute_temp_partial.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_deform.cpp > compute_temp_deform.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp.cpp > compute_temp.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_temp_com.cpp > compute_temp_com.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_stress_atom.cpp > compute_stress_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_slice.cpp > compute_slice.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_reduce_region.cpp > compute_reduce_region.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_reduce.cpp > compute_reduce.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_rdf.cpp > compute_rdf.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_property_molecule.cpp > compute_property_molecule.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_property_local.cpp > compute_property_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_property_atom.cpp > compute_property_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_pressure.cpp > compute_pressure.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_pe.cpp > compute_pe.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_pe_atom.cpp > compute_pe_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_pair_local.cpp > compute_pair_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_pair_gran_local.cpp > compute_pair_gran_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_pair.cpp > compute_pair.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_nparticles_tracer_region.cpp > compute_nparticles_tracer_region.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_msd_molecule.cpp > compute_msd_molecule.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_msd.cpp > compute_msd.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_ke_rigid.cpp > compute_ke_rigid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_ke.cpp > compute_ke.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_ke_atom.cpp > compute_ke_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_inertia_molecule.cpp > compute_inertia_molecule.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_improper_local.cpp > compute_improper_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_heat_flux.cpp > compute_heat_flux.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_gyration_molecule.cpp > compute_gyration_molecule.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_gyration.cpp > compute_gyration.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_group_group.cpp > compute_group_group.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_erotate_sphere.cpp > compute_erotate_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_erotate_sphere_atom.cpp > compute_erotate_sphere_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_erotate_rigid.cpp > compute_erotate_rigid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_displace_atom.cpp > compute_displace_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_dihedral_local.cpp > compute_dihedral_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute.cpp > compute.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_coord_atom.cpp > compute_coord_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_contact_atom.cpp > compute_contact_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_com_molecule.cpp > compute_com_molecule.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_com.cpp > compute_com.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_cna_atom.cpp > compute_cna_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_cluster_atom.cpp > compute_cluster_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_centro_atom.cpp > compute_centro_atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_bond_local.cpp > compute_bond_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_atom_molecule.cpp > compute_atom_molecule.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M compute_angle_local.cpp > compute_angle_local.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M comm.cpp > comm.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M citeme.cpp > citeme.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M change_box.cpp > change_box.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M cfd_regionmodel_none.cpp > cfd_regionmodel_none.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M cfd_datacoupling_mpi.cpp > cfd_datacoupling_mpi.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M cfd_datacoupling_file.cpp > cfd_datacoupling_file.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M cfd_datacoupling.cpp > cfd_datacoupling.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M bounding_box.cpp > bounding_box.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M bond_hybrid.cpp > bond_hybrid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M bond.cpp > bond.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M body.cpp > body.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_tri.cpp > atom_vec_tri.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_sph_var.cpp > atom_vec_sph_var.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_sphere_w.cpp > atom_vec_sphere_w.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_sphere.cpp > atom_vec_sphere.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_sph.cpp > atom_vec_sph.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_line.cpp > atom_vec_line.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_hybrid.cpp > atom_vec_hybrid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_ellipsoid.cpp > atom_vec_ellipsoid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec.cpp > atom_vec.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_charge.cpp > atom_vec_charge.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_body.cpp > atom_vec_body.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_vec_atomic.cpp > atom_vec_atomic.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom_map.cpp > atom_map.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M atom.cpp > atom.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M angle_hybrid.cpp > angle_hybrid.d
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -M angle.cpp > angle.d
+make[1]: Leaving directory `/home/hema2/aozel/CFDEM/LIGGGHTS_v3/src/Obj_hema_2.2.x'
+make[1]: Entering directory `/home/hema2/aozel/CFDEM/LIGGGHTS_v3/src/Obj_hema_2.2.x'
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c angle.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c angle_hybrid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_map.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_atomic.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_body.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_charge.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_ellipsoid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_hybrid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_line.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_sphere_w.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_sph_var.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c atom_vec_tri.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c body.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c bond.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c bond_hybrid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c bounding_box.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c cfd_datacoupling.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c cfd_datacoupling_file.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c cfd_datacoupling_mpi.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c cfd_regionmodel_none.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c change_box.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c citeme.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c comm.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_angle_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_atom_molecule.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_bond_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_centro_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_cluster_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_cna_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_com.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_com_molecule.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_contact_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_coord_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_dihedral_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_displace_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_erotate_rigid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_erotate_sphere_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_erotate_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_group_group.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_gyration.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_gyration_molecule.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_heat_flux.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_improper_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_inertia_molecule.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_ke_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_ke.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_ke_rigid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_msd.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_msd_molecule.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_nparticles_tracer_region.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_pair.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_pair_gran_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_pair_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_pe_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_pe.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_pressure.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_property_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_property_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_property_molecule.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_rdf.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_reduce.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_reduce_region.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_slice.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_stress_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_com.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_deform.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_partial.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_profile.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_ramp.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_region.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_temp_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c compute_vacf.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c container_base.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c create_atoms.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c create_box.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c custom_value_tracker.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c delete_atoms.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c delete_bonds.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dihedral.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dihedral_hybrid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c displace_atoms.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c domain.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_atom_vtk.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_cfg.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_custom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_dcd.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_decomposition_vtk.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_euler_vtk.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_image.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_local.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_mesh_stl.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_mesh_vtk.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_movie.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c dump_xyz.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c error.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c finish.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_adapt.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_addforce.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_ave_atom.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_ave_correlate.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_ave_euler.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_aveforce.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_ave_histo.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_ave_spatial.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_ave_time.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_box_relax.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_cfd_coupling_convection.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_cfd_coupling.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_cfd_coupling_force.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_cfd_coupling_force_implicit.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_check_timestep_gran.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_check_timestep_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_contact_history.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_contact_history_mesh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_deform.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_deposit.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_drag.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_dt_reset.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_enforce2d.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_external.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_freeze.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_gravity.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_heat.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_heat_gran_conduction.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_heat_gran.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_indent.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_insert.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_insert_pack.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_insert_rate_region.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_insert_stream.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_langevin.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_lineforce.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_liquidtracking.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_liquidtracking_instant.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_liquidtransfer.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_massflow_mesh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_mesh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_mesh_surface.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_mesh_surface_stress.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_mesh_surface_stress_servo.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_minimize.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_momentum.cpp
+fix_cfd_coupling_convection.cpp: In member function ‘virtual void LAMMPS_NS::FixCfdCouplingConvection::post_create()’:
+fix_cfd_coupling_convection.cpp:87:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:88:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:89:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:90:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:91:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:92:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:93:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:94:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_convection.cpp:95:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_move.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_move_mesh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_neighlist_mesh.cpp
+fix_cfd_coupling_force.cpp: In member function ‘virtual void LAMMPS_NS::FixCfdCouplingForce::post_create()’:
+fix_cfd_coupling_force.cpp:107:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:108:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:109:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:110:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:111:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:112:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:113:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:114:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:115:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:116:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:117:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:127:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:128:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:129:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:130:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:131:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:132:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:133:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:134:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_cfd_coupling_force.cpp:135:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nh_sphere.cpp
+fix_liquidtracking.cpp: In member function ‘virtual void LAMMPS_NS::FixLiquidTracking::post_create()’:
+fix_liquidtracking.cpp:78:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:79:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:80:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:81:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:82:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:83:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:84:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:85:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:86:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:87:12: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:88:13: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:95:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:96:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:97:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:98:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:99:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:100:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:101:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:102:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:103:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:104:12: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:105:13: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:112:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:113:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:114:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:115:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:116:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:117:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:118:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:119:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:120:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:121:12: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:122:13: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:129:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:130:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:131:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:132:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:133:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:134:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:135:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:136:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:137:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:138:12: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:139:13: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:146:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:147:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:148:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:149:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:150:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:151:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:152:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:153:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:154:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:155:12: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_liquidtracking.cpp:156:13: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nph.cpp
+fix_heat_gran.cpp: In member function ‘virtual void LAMMPS_NS::FixHeatGran::post_create()’:
+fix_heat_gran.cpp:77:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:78:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:79:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:80:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:81:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:82:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:83:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:84:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:85:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:86:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_heat_gran.cpp:87:16: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nph_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_npt.cpp
+fix_insert_stream.cpp: In member function ‘virtual void LAMMPS_NS::FixInsertStream::post_create()’:
+fix_insert_stream.cpp:141:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:142:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:143:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:144:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:145:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:146:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:147:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:148:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:149:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:150:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:151:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:152:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:153:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:154:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:155:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:156:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:157:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:158:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:159:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:160:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:161:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_insert_stream.cpp:162:20: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_npt_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nve.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nve_limit.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nve_noforce.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nve_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nve_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nve_sph_stationary.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nvt.cpp
+In file included from multi_node_mesh.h:31:0,
+                 from multi_node_mesh_parallel.h:26,
+                 from tracking_mesh.h:31,
+                 from surface_mesh.h:31,
+                 from tri_mesh.h:31,
+                 from fix_move_mesh.cpp:31:
+abstract_mesh.h:89:50: warning: inline function ‘virtual LAMMPS_NS::CustomValueTracker& LAMMPS_NS::AbstractMesh::prop()’ used but never defined [enabled by default]mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nvt_sllod.cpp
+
+In file included from multi_node_mesh.h:31:0,
+                 from multi_node_mesh_parallel.h:26,
+                 from tracking_mesh.h:31,
+                 from surface_mesh.h:31,
+                 from tri_mesh.h:31,
+                 from fix_mesh_surface.h:39,
+                 from fix_mesh_surface_stress.h:37,
+                 from fix_mesh_surface_stress.cpp:29:
+abstract_mesh.h:89:50: warning: inline function ‘virtual LAMMPS_NS::CustomValueTracker& LAMMPS_NS::AbstractMesh::prop()’ used but never defined [enabled by default]
+In file included from multi_node_mesh.h:31:0,
+                 from multi_node_mesh_parallel.h:26,
+                 from tracking_mesh.h:31,
+                 from surface_mesh.h:31,
+                 from tri_mesh.h:31,
+                 from fix_mesh_surface.h:39,
+                 from fix_mesh_surface.cpp:29:
+abstract_mesh.h:89:50: warning: inline function ‘virtual LAMMPS_NS::CustomValueTracker& LAMMPS_NS::AbstractMesh::prop()’ used but never defined [enabled by default]
+In file included from multi_node_mesh.h:31:0,
+                 from multi_node_mesh_parallel.h:26,
+                 from tracking_mesh.h:31,
+                 from surface_mesh.h:31,
+                 from tri_mesh.h:31,
+                 from tri_mesh_planar.h:25,
+                 from fix_mesh.cpp:39:
+abstract_mesh.h:89:50: warning: inline function ‘virtual LAMMPS_NS::CustomValueTracker& LAMMPS_NS::AbstractMesh::prop()’ used but never defined [enabled by default]
+fix_massflow_mesh.cpp: In member function ‘virtual void LAMMPS_NS::FixMassflowMesh::post_create()’:
+fix_massflow_mesh.cpp:222:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_massflow_mesh.cpp:223:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_massflow_mesh.cpp:225:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_massflow_mesh.cpp:226:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_massflow_mesh.cpp:227:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_massflow_mesh.cpp:228:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_massflow_mesh.cpp:229:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_nvt_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_particledistribution_discrete.cpp
+In file included from multi_node_mesh.h:31:0,
+                 from multi_node_mesh_parallel.h:26,
+                 from tracking_mesh.h:31,
+                 from surface_mesh.h:31,
+                 from tri_mesh.h:31,
+                 from fix_mesh_surface.h:39,
+                 from fix_mesh_surface_stress.h:37,
+                 from fix_mesh_surface_stress_servo.h:40,
+                 from fix_mesh_surface_stress_servo.cpp:30:
+abstract_mesh.h:89:50: warning: inline function ‘virtual LAMMPS_NS::CustomValueTracker& LAMMPS_NS::AbstractMesh::prop()’ used but never defined [enabled by default]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_planeforce.cpp
+fix_neighlist_mesh.cpp: In member function ‘virtual void LAMMPS_NS::FixNeighlistMesh::post_create()’:
+fix_neighlist_mesh.cpp:95:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_neighlist_mesh.cpp:96:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_neighlist_mesh.cpp:98:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_neighlist_mesh.cpp:99:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_neighlist_mesh.cpp:100:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_neighlist_mesh.cpp:101:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_neighlist_mesh.cpp:102:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_pour.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_press_berendsen.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_print.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_property_atom.cpp
+fix_particledistribution_discrete.cpp:44:0: warning: "MIN" redefined [enabled by default]
+In file included from fix.h:27:0,
+                 from fix_template_sphere.h:31,
+                 from fix_particledistribution_discrete.cpp:26:
+pointers.h:34:0: note: this is the location of the previous definition
+fix_particledistribution_discrete.cpp:45:0: warning: "MAX" redefined [enabled by default]
+In file included from fix.h:27:0,
+                 from fix_template_sphere.h:31,
+                 from fix_particledistribution_discrete.cpp:26:
+pointers.h:35:0: note: this is the location of the previous definition
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_property_atom_tracer.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_property_atom_tracer_stream.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_property_global.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_read_restart.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_recenter.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_region_variable.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_respa.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_restrain.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid_nh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid_nph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid_npt.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid_nve.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid_nvt.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_rigid_small.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_scalar_transport_equation.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_setforce.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_shake.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_shear_history.cpp
+fix_property_atom_tracer.cpp: In constructor ‘LAMMPS_NS::FixPropertyAtomTracer::FixPropertyAtomTracer(LAMMPS_NS::LAMMPS*, int, char**, bool)’:
+fix_property_atom_tracer.cpp:63:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_property_atom_tracer.cpp:64:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_property_atom_tracer.cpp:66:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_property_atom_tracer.cpp:67:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_property_atom_tracer.cpp:68:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_property_atom_tracer.cpp:69:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_property_atom_tracer.cpp:70:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_sph_density_continuity.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_sph_density_corr.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_sph_density_summation.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_sph_pressure.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_spring.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_spring_rg.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_spring_self.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_store.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_store_force.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_store_state.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_temp_berendsen.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_template_multiplespheres.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_template_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_temp_rescale.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_tmd.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_viscous.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_gran.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_harmonic.cpp
+fix_scalar_transport_equation.cpp: In member function ‘virtual void LAMMPS_NS::FixScalarTransportEquation::post_create()’:
+fix_scalar_transport_equation.cpp:157:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:158:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:160:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:161:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:162:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:163:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:174:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:175:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:177:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:178:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:179:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:180:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:181:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:189:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:190:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:192:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:193:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:194:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:195:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+fix_scalar_transport_equation.cpp:196:15: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_lj1043.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_lj126.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_lj93.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_reflect.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_region.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_region_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c fix_wall_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c force.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c global_properties.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c group.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c image.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c improper.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c improper_hybrid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c input.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c input_mesh_tet.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c input_mesh_tri.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c input_multisphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c integrate.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c irregular.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c kspace.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c lammps.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c lattice.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c library_cfd_coupling.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c library.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c main.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c math_extra.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c mech_param_gran.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c memory.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c mesh_mover.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min_cg.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min_fire.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min_hftn.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c minimize.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min_linesearch.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min_quickmin.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c min_sd.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c modified_andrew.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c modify.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c modify_liggghts.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_bond.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neighbor.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_derive.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_dummy.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_full.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_gran.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_half_bin.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_half_multi.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_half_nsq.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_list.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_request.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_respa.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c neigh_stencil.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c output.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_beck.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_born_coul_wolf.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_born.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_buck_coul_cut.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_buck.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_coul_cut.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_coul_debye.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_coul_dsf.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_coul_wolf.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_dpd.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_dpd_tstat.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_gauss.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_gran.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_hybrid.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_hybrid_overlay.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj96_cut.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_cubic.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_cut_coul_cut.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_cut_coul_debye.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_cut_coul_dsf.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_cut.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_expand.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_gromacs_coul_gromacs.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_gromacs.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_smooth.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_lj_smooth_linear.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_mie_cut.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_morse.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_soft.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_sph_artvisc_tenscorr.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_sph.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_table.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_yukawa.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c pair_zbl.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c particleToInsert.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c procmap.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c property_registry.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c random_mars.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c random_park.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c read_data.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c read_dump.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c reader.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c reader_native.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c reader_xyz.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c read_restart.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_block.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_cone.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_cylinder.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_intersect.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_mesh_tet.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_plane.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_prism.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_sphere.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_union.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c region_wedge.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c replicate.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c rerun.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c respa.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c run.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c set.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c special.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c thermo.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c timer.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c tri_mesh.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c tri_mesh_planar.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c universe.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c update.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c variable.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c velocity.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c verlet.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c verlet_implicit.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c write_data.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c write_dump.cpp
+mpic++ -g -O -fPIC -DLAMMPS_GZIP  -I /opt/OpenFOAM/ThirdParty-2.2.x/platforms/linux64Gcc/openmpi-1.6.3/include -DFFT_NONE -c write_restart.cpp

@@ -1,0 +1,3 @@
+SOURCE = \
+./particleSlipJohnsonJackson/particleSlipJohnsonJacksonFvPatchVectorField.C\
+./particleThetaJohnsonJackson/particleThetaJohnsonJacksonFvPatchScalarField.C

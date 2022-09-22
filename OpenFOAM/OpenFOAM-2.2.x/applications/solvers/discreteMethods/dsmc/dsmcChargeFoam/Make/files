@@ -1,0 +1,3 @@
+dsmcChargeFoam.C
+
+EXE = $(FOAM_APPBIN)/dsmcChargeFoam

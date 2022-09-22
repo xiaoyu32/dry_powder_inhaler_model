@@ -1,0 +1,13 @@
+# 1 "files"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 161 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "files" 2
+filteringEulerianField.C
+
+globalIndexStencils/CPCCellToCellStencil_mod.C
+
+EXE = $(CFDEM_APP_DIR)/filteringEulerianField
+

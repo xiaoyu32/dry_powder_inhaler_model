@@ -1,0 +1,16 @@
+solid inlet_1
+   facet normal -1.734723e-016 -1.000000e+000 -8.673617e-018
+      outer loop
+         vertex 1.000000e-002 1.000000e-002 0.000000e+000
+         vertex 1.441784e-002 1.000000e-002 0.000000e+000
+         vertex 1.000000e-002 1.000000e-002 2.000000e-001
+      endloop
+   endfacet
+   facet normal -1.734723e-016 -1.000000e+000 -8.673617e-018
+      outer loop
+         vertex 1.000000e-002 1.000000e-002 2.000000e-001
+         vertex 1.441784e-002 1.000000e-002 0.000000e+000
+         vertex 1.441784e-002 1.000000e-002 2.000000e-001
+      endloop
+   endfacet
+endsolid inlet_1

@@ -1,0 +1,6 @@
+DEPENDENCIES = \
+newPolarizationModel.dep\
+polarizationModel.dep\
+newPermittivityModel.dep\
+permittivityModel.dep\
+cfdemCloudChargePolarization.dep

@@ -1,0 +1,3 @@
+cfdemSolverInsulatingElectricDPI.C
+
+EXE=$(CFDEM_APP_DIR)/cfdemSolverInsulatingElectricDPI

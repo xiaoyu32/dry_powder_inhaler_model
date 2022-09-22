@@ -1,0 +1,11 @@
+domainFilter.C
+readVariables.C
+dragForce.C
+fluidCoarsening.C
+createParcel.C
+coarseningPar.C
+applyBin.C
+output.C
+fluidParticleCoarsening.C
+
+EXE = $(CFDEM_APP_DIR)/fluidParticleCoarsening

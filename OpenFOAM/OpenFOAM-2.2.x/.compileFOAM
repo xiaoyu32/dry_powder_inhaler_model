@@ -1,0 +1,9 @@
+echo "=========================== OpenFoam =============================="
+
+
+cd $FOAM_INST_DIR/$WM_PROJECT-$WM_PROJECT_VERSION
+
+wcleanAll
+
+./Allwmake
+

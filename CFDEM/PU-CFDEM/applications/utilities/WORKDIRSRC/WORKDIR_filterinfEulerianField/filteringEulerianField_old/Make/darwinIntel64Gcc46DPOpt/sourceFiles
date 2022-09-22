@@ -1,0 +1,3 @@
+SOURCE = \
+filteringEulerianField.C\
+globalIndexStencils/CPCCellToCellStencil_mod.C

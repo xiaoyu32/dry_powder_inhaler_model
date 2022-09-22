@@ -1,0 +1,3 @@
+include cfdemCloudScalar.dep
+include passiveScalarDensityModel.dep
+include newPassiveScalarDensityModel.dep

@@ -1,0 +1,3 @@
+cfdemSolverPimplePEABetaV3PerioStress.C
+
+EXE=$(CFDEM_APP_DIR)/cfdemSolverPimplePEABetaV3PerioStressdev

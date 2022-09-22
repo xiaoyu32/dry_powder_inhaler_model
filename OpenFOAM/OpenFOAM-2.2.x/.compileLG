@@ -1,0 +1,13 @@
+echo "=========================== LIGGGHTS =============================="
+
+cd $CFDEM_LIGGGHTS_SRC_DIR/
+
+pwd
+
+./lmakes
+
+
+./lmake
+
+echo "======================= LIGGGHTS Compiled ========================="
+

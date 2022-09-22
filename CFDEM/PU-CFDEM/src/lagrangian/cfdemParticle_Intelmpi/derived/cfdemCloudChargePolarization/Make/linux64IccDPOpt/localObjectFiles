@@ -1,0 +1,6 @@
+LOCAL_OBJECTS = \
+newPolarizationModel.o\
+polarizationModel.o\
+newPermittivityModel.o\
+permittivityModel.o\
+cfdemCloudChargePolarization.o

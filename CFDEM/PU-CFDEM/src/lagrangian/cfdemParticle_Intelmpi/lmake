@@ -1,0 +1,9 @@
+
+
+echo "Cleaning CFDEM"
+wclean
+
+echo "Compiling CFDEM"
+wmake
+
+echo "CFD-DEM compiled"

@@ -1,0 +1,6 @@
+SOURCE = \
+apiDensityModel.C\
+cfdemCoarseDPICloud.C\
+newAPIDensityModel.C\
+$(CFDEM_SRC_DIR)/subModels/apiTransferModel/vanWachem/vanWachem.C\
+$(CFDEM_SRC_DIR)/subModels/apiTransferModel/noTransfer/noTransfer.C

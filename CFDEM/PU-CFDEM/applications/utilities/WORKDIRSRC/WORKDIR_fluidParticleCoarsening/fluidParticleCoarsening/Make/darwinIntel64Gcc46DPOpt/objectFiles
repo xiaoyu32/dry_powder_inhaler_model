@@ -1,0 +1,10 @@
+OBJECTS = \
+$(OBJECTS_DIR)/domainFilter.o\
+$(OBJECTS_DIR)/readVariables.o\
+$(OBJECTS_DIR)/dragForce.o\
+$(OBJECTS_DIR)/fluidCoarsening.o\
+$(OBJECTS_DIR)/createParcel.o\
+$(OBJECTS_DIR)/coarsening.o\
+$(OBJECTS_DIR)/applyBin.o\
+$(OBJECTS_DIR)/output.o\
+$(OBJECTS_DIR)/fluidParticleCoarsening.o

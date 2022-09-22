@@ -1,0 +1,4 @@
+OBJECTS = \
+$(OBJECTS_DIR)/outputWrite.o\
+$(OBJECTS_DIR)/calcCollisionalForce.o\
+$(OBJECTS_DIR)/particleStressBiParallel.o

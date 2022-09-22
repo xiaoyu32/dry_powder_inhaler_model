@@ -1,0 +1,93 @@
+
+#######################################################
+# variables                                           #
+#######################################################
+variable rParticle equal 50e-6
+variable cg1 equal 2
+variable cg2 equal 5
+#######################################################
+
+coarsegraining  ${cg1} ${cg2} #1st value = CG for type 1, 2nd value = CG for type 2
+
+echo            both
+log             ../DEM/log.liggghts
+thermo_log      ../DEM/post/thermo.txt
+
+atom_style      granular
+atom_modify     map array sort 0 0
+communicate     single vel yes
+
+boundary        f f f
+newton          off
+
+units           si
+
+region          reg block 0 0.1 0 0.1 0 0.1 units box
+create_box      2 reg
+
+neighbor        0.003 bin
+neigh_modify    delay 0 binsize 0.01
+
+
+# Material properties required for granular pair styles
+fix         m1 all property/global youngsModulus peratomtype 5.e6 5.e6
+fix         m2 all property/global poissonsRatio peratomtype 0.45 0.45
+fix         m3 all property/global coefficientRestitution peratomtypepair 2 0.3 0.3 0.3 0.3
+fix         m4 all property/global coefficientFriction peratomtypepair 2 0.5 0.5 0.5 0.5
+#fix         m5 all property/global characteristicVelocity scalar 2.0
+
+# pair style
+pair_style  gran model hertz tangential history # hertz without cohesion
+pair_coeff  * *
+
+# timestep, gravity
+timestep    0.00001
+fix         gravi all gravity 9.81 vector 0.0 -1.0 0.0
+
+# walls
+fix     xwalls1 all wall/gran model hertz tangential history primitive type 1 xplane 0.0
+fix     xwalls2 all wall/gran model hertz tangential history primitive type 1 xplane 0.1
+fix     ywalls1 all wall/gran model hertz tangential history primitive type 1 yplane 0.0
+fix     ywalls2 all wall/gran model hertz tangential history primitive type 1 yplane 0.1
+fix     zwalls1 all wall/gran model hertz tangential history primitive type 1 zplane 0.0
+fix     zwalls2 all wall/gran model hertz tangential history primitive type 1 zplane 0.01
+
+# particle distributions and insertion
+region  bc1 block 0.045 0.05 0.040 0.041 0.045 0.050 units box
+region  bc2 block 0.045 0.05 0.040 0.041 0.050 0.055 units box
+fix     pts1 all particletemplate/sphere 15485863 atom_type 1 density constant 3000 radius constant ${rParticle} volume_limit 5.e-13
+fix     pts2 all particletemplate/sphere 86028121 atom_type 2 density constant 3000 radius constant ${rParticle} volume_limit 5.e-13
+fix     pdd1 all particledistribution/discrete 15485867 1 pts1 1.
+fix     pdd2 all particledistribution/discrete 67867967 1 pts2 1.
+fix		ins1 all insert/pack seed 32452843 distributiontemplate pdd1 vel constant 0. 0. 0. insert_every once overlapcheck yes all_in yes particles_in_region 1 region bc1
+fix		ins2 all insert/pack seed 86028157 distributiontemplate pdd2 vel constant 0. 0. 0. insert_every once overlapcheck yes all_in yes particles_in_region 1 region bc2
+
+# cfd coupling
+fix     cfd all couple/cfd couple_every 100 mpi
+fix     cfd2 all couple/cfd/force
+
+variable    vx equal vx[1]
+variable    vy equal vy[1]
+variable    vz equal vz[1]
+variable    vx1 equal vx[2]
+variable    vy1 equal vy[2]
+variable    vz1 equal vz[2]
+variable    time equal step*dt
+fix         extra all print 100 "${time} ${vx} ${vy} ${vz} ${vx1} ${vy1} ${vz1}" file ../DEM/post/velocity.txt title "#" screen no
+
+# apply nve integration to all particles that are inserted as single particles
+fix         integr all nve/sphere
+
+
+# screen output
+compute         rke all erotate/sphere
+thermo_style    custom step atoms ke c_rke vol
+thermo          1000
+thermo_modify   lost ignore norm no
+compute_modify  thermo_temp dynamic yes
+
+# insert the first particles so that dump is not empty
+run     0
+dump    dmp all custom 1000 ../DEM/post/dump.liggghts_run id type x y z vy radius
+
+run     0 upto

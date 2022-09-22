@@ -1,0 +1,1 @@
+mpirun -np 16 ./lmp_auto < in.liggghts_run

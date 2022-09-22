@@ -1,0 +1,6 @@
+DEPENDENCIES = \
+$(locateModels)/locateModelPU/locateModelPU.dep\
+$(locateModels)/locateModelPU/newLocateModelPU.dep\
+$(locateModels)/standardSearchPU/standardSearchPU.dep\
+$(locateModels)/engineSearchPU/engineSearchPU.dep\
+cfdemCloudPU/cfdemCloudPU.dep

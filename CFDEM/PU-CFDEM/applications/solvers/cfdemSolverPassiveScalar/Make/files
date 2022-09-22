@@ -1,0 +1,3 @@
+cfdemSolverPassiveScalar.C
+
+EXE=$(CFDEM_APP_DIR)/cfdemSolverPassiveScalar

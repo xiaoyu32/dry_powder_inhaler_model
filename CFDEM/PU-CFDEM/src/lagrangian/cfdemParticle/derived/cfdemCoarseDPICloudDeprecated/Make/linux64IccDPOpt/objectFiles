@@ -1,0 +1,6 @@
+OBJECTS = \
+$(OBJECTS_DIR)/apiDensityModel.o\
+$(OBJECTS_DIR)/cfdemCoarseDPICloud.o\
+$(OBJECTS_DIR)/newAPIDensityModel.o\
+$(OBJECTS_DIR)/vanWachem.o\
+$(OBJECTS_DIR)/noTransfer.o

@@ -1,0 +1,8 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+filteringEulerianField.C
+
+globalIndexStencils/CPCCellToCellStencil_mod.C
+
+EXE = $(CFDEM_APP_DIR)/filteringEulerianField

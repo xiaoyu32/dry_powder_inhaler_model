@@ -1,0 +1,3 @@
+OBJECTS = \
+$(OBJECTS_DIR)/calcCollisionalForce.o\
+$(OBJECTS_DIR)/particleStress.o

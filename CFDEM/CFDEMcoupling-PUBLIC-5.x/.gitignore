@@ -1,0 +1,7 @@
+*.o
+*.so
+*.dep
+log_*
+log.*
+*~
+platforms

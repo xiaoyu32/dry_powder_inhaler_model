@@ -1,0 +1,5 @@
+mkdir avoid
+
+mv atom_vec_charge.cpp  cfd_regionmodel_none.cpp  atom_vec_charge.h  cfd_regionmodel_none.h  cohesion_model_electrostatic.h  cohesion_model_electrostatic_screened.h  cohesion_model_lubrication.h  cohesion_model_sjkr2.h  cohesion_model_sjkr.h  efield_model.h  efield_model_normal.h  efield_model_screened.h  fix_charge_force.cpp  fix_charge_force.h  fix_charge_force_parcel.cpp  fix_charge_force_parcel.h  fix_charge_gran_conduction.cpp  fix_charge_gran_conduction.h  fix_charge_gran.cpp  fix_charge_gran.h  fix_mesh_surface_charge_conduction.cpp  fix_mesh_surface_charge_conduction.h  fix_mesh_surface_charge.cpp  fix_mesh_surface_charge.h  fix_polarization.cpp  fix_polarization_dielectric.cpp  fix_polarization_dielectric.h  fix_polarization.h  fix_polarization_permanent.cpp  fix_polarization_permanent.h  fix_wall_charge.cpp  fix_wall_charge.h  normal_model_hertz_stiffness.h  normal_model_hooke.h  normal_model_hooke_hysteresis.h  normal_model_hooke_stiffness.h  rolling_model_epsd2.h rolling_model_epsd.h avoid/
+
+sh Make.sh models

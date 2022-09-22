@@ -1,0 +1,6 @@
+LOCAL_OBJECTS = \
+apiDensityModel.o\
+cfdemCoarseDPICloud.o\
+newAPIDensityModel.o\
+vanWachem.o\
+noTransfer.o

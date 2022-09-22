@@ -1,0 +1,5 @@
+filteringEulerianField.C
+
+globalIndexStencils/CPCCellToCellStencil_mod.C
+
+EXE = $(CFDEM_APP_DIR)/filteringEulerianField

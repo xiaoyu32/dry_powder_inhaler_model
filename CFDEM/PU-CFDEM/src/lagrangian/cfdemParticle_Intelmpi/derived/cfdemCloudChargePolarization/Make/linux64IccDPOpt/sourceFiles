@@ -1,0 +1,6 @@
+SOURCE = \
+newPolarizationModel.C\
+polarizationModel.C\
+newPermittivityModel.C\
+permittivityModel.C\
+cfdemCloudChargePolarization.C

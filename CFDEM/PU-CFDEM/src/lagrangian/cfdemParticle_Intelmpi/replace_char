@@ -1,0 +1,2 @@
+find ./ -type f -exec sed -i 's/lmpicxx/lmpicxx/gI' {} \;
+

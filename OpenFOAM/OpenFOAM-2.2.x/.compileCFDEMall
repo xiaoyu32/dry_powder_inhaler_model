@@ -1,0 +1,49 @@
+echo "=========================== OpenFoam =============================="
+
+
+cd $FOAM_INST_DIR/$WM_PROJECT-$WM_PROJECT_VERSION
+
+wcleanAll
+
+./Allwmake
+
+
+echo "=========================== LIGGGHTS =============================="
+
+cd $CFDEM_LIGGGHTS_SRC_DIR/
+
+pwd
+
+./lmakes
+
+
+./lmake
+
+
+echo "======================= LIGGGHTS Compiled ========================="
+
+
+
+echo "=========================== CFDEM =============================="
+
+cd $CFDEM_SRC_DIR
+
+pwd
+
+./lmake
+
+
+echo "======================= CFDEM Compiled ========================="
+
+
+
+cd $CFDEM_SOLVER_DIR/cfdemSolverDPI
+
+pwd
+
+./lmake
+
+
+
+echo "======================= cfdemSolverDPI Compiled ========================="
+

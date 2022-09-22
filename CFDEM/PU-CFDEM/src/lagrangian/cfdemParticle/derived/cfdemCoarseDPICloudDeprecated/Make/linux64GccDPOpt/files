@@ -1,0 +1,14 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+
+locateModels = subModelsPU/locateModelPU
+
+$(locateModels)/locateModelPU/locateModelPU.C
+$(locateModels)/locateModelPU/newLocateModelPU.C
+$(locateModels)/standardSearchPU/standardSearchPU.C
+$(locateModels)/engineSearchPU/engineSearchPU.C
+
+cfdemCloudPU/cfdemCloudPU.C
+
+LIB = $(FOAM_USER_LIBBIN)/lib$(CFDEM_LIB_NAME)PU

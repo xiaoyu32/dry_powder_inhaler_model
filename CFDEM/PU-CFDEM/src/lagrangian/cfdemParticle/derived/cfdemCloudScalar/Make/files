@@ -1,0 +1,5 @@
+cfdemCloudScalar.C
+passiveScalarDensityModel.C
+newPassiveScalarDensityModel.C
+
+LIB = $(FOAM_USER_LIBBIN)/lib$(CFDEM_LIB_NAME)ScalarTransport

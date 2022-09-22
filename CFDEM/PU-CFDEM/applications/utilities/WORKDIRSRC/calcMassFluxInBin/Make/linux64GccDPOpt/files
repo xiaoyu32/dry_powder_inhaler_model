@@ -1,0 +1,6 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+calcMassFluxInBin.C
+
+EXE = $(CFDEM_APP_DIR)/calcMassFluxInBin

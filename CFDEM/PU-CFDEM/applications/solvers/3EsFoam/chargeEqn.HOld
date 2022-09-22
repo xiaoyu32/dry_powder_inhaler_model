@@ -1,0 +1,30 @@
+fvScalarMatrix chargeEqn(charge, charge.dimensions()*dimVol/dimTime);
+{   
+    electrostaticsKT.compute();   
+    
+    volScalarField kappaq = electrostaticsKT.kappaq()/rho1;
+    if(electrostaticsKT.onTurbulentDiffusivity()) kappaq += electrostaticsKT.kappaqt()/rho1;
+    surfaceScalarField alpha1fphi(fvc::interpolate(alpha1)*phi1);
+
+     //volScalarField simgaq = electrostaticsKT.sigmaq()/rho1;    
+    sigmaqEf = electrostaticsKT.sigmaqEf()/rho1; 
+    sigmaqEf.correctBoundaryConditions();
+     
+    chargeEqn =
+    (
+        fvm::ddt(alpha1,charge)
+      + fvm::div(alpha1fphi, charge, "div(alpha1fphi,charge)")
+      - fvm::laplacian(kappaq, charge)	  
+    );
+    chargeEqn.relax();
+
+    solve
+    (
+	chargeEqn == - fvc::div(sigmaqEf)
+    );
+    
+    Info<< "Dispersed phase charge: "
+        << "  Min(charge) = " << min(charge).value()
+        << "  Max(charge) = " << max(charge).value()
+        << endl;    
+}

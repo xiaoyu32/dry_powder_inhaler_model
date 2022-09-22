@@ -1,0 +1,115 @@
+void constructfilter
+	(	     
+		const argList& args, 
+		const Time& runTime, 
+		const fvMesh& mesh,
+		const int& minfilterwidth,
+		const int& maxfilterwidth,
+		const int& filterincrement,
+		labelListListList& stencillistfilter,
+		const fileName& outputRelativePath_		
+	)
+
+	{				
+		char charfilterwidth[100];
+
+		// Find stencils						
+		labelListList stencillist(mesh.nCells());
+		if ( maxfilterwidth !=0 ) // avoid list with zero length for filter 3X3X3
+		{
+			stencillistfilter.resize(maxfilterwidth*stencillist.size());				
+		}
+		else
+		{
+			stencillistfilter.resize(stencillist.size());	
+		}
+
+		// Create stencil list folder if not exist
+		if( !isDir(mesh.time().path()/outputRelativePath_) )
+		{
+			mkDir(mesh.time().path()/outputRelativePath_);													
+ 
+			for( int filterwidth = minfilterwidth; filterwidth <= maxfilterwidth; filterwidth += filterincrement )
+			{
+				int Filter = 2*(filterwidth+1)+1;
+				sprintf(charfilterwidth, "stencils_%dX%dX%d",Filter,Filter,Filter);
+				fileName outputfile(charfilterwidth);
+								
+				if ( !isFile(mesh.time().path()/outputRelativePath_/outputfile) )
+				{
+					Info << "Creating stencil list for " << Filter << "X" << Filter << "X" << Filter << " filter " << endl;
+					OFstream str_stencil(mesh.time().path()/outputRelativePath_/outputfile);
+					
+					CPCCellToCellStencil_mod stencil(mesh,Filter);
+
+					forAll(mesh.cells(),cellI)
+					{
+						stencillist[cellI] = stencil[cellI];
+										
+						labelList cellSt = stencillist[cellI];
+						str_stencil << cellSt.size() << "( " ;
+						
+						forAll(cellSt,StI)
+						{
+							str_stencil << cellSt[StI] << " " ;
+						}
+						str_stencil << ")" << nl;
+					}
+
+					stencillistfilter[filterwidth] = stencillist;
+										
+				}
+			}			
+						
+		}
+		else
+		{
+			for( int filterwidth = minfilterwidth; filterwidth <= maxfilterwidth; filterwidth += filterincrement )
+			{
+				int Filter = 2*(filterwidth+1)+1;
+				sprintf(charfilterwidth, "stencils_%dX%dX%d",Filter,Filter,Filter);
+				fileName outputfile(charfilterwidth);
+				
+				/*
+				if ( isFile(mesh.time().path()/outputRelativePath_/outputfile) )
+				{					
+					Info << "Reading stencil list for " << Filter << "X" << Filter << "X" << Filter << " filter " << endl;	
+					IFstream str_stencil(mesh.time().path()/outputRelativePath_/outputfile);
+					forAll(mesh.cells(),cellI)
+					{
+						str_stencil >> stencillist[cellI];
+					}
+					
+					stencillistfilter[filterwidth] = stencillist;																			
+				}
+				else
+				*/
+				{
+					Info << "Creating stencil list for " << Filter << "X" << Filter << "X" << Filter << " filter " << endl;
+					OFstream str_stencil(mesh.time().path()/outputRelativePath_/outputfile);
+					
+					CPCCellToCellStencil_mod stencil(mesh,Filter);
+
+					forAll(mesh.cells(),cellI)
+					{
+						stencillist[cellI] = stencil[cellI];
+										
+						labelList cellSt = stencillist[cellI];
+						str_stencil << cellSt.size() << "( " ;
+						
+						forAll(cellSt,StI)
+						{
+							str_stencil << cellSt[StI] << " " ;
+						}
+						str_stencil << ")" << nl;
+
+					}
+
+					stencillistfilter[filterwidth] = stencillist;					
+				}				
+												
+			}			
+		}						
+		
+		Info << "" << endl;
+	}

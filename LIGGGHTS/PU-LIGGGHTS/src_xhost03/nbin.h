@@ -1,0 +1,94 @@
+/* -*- c++ -*- ----------------------------------------------------------
+   LAMMPS - Large-scale Atomic/Molecular Massively Parallel Simulator
+   http://lammps.sandia.gov, Sandia National Laboratories
+   Steve Plimpton, sjplimp@sandia.gov
+
+   Copyright (2003) Sandia Corporation.  Under the terms of Contract
+   DE-AC04-94AL85000 with Sandia Corporation, the U.S. Government retains
+   certain rights in this software.  This software is distributed under
+   the GNU General Public License.
+
+   See the README file in the top-level LAMMPS directory.
+------------------------------------------------------------------------- */
+
+#ifndef LMP_NBIN_H
+#define LMP_NBIN_H
+
+#include "pointers.h"
+#include "bin_hash_table.h"
+
+
+namespace LAMMPS_NS {
+
+class NBin : protected Pointers {
+
+ public:
+  int istyle;                      // 1-N index into binnames
+  bigint last_bin;                 // last timestep atoms were binned
+
+  int nbinx,nbiny,nbinz;           // # of global bins
+  long mbins;                       // # of local bins and offset on this proc
+  int mbinx,mbiny,mbinz;
+  int mbinxlo,mbinylo,mbinzlo;
+
+  double binsizex,binsizey,binsizez;  // bin sizes and inverse sizes
+  double bininvx,bininvy,bininvz;
+  
+  
+  BinHashTable binhead;
+  
+  //int *binhead;                // index of first atom in each bin
+  
+  int *bins;                   // index of next atom in same bin
+  long *atom2bin;               // bin assignment for each atom (local+ghost)
+
+  double cutoff_custom;        // cutoff set by requestor
+
+  NBin(class LAMMPS *);
+  ~NBin();
+  void post_constructor(class NeighRequest *);
+  virtual void copy_neighbor_info();
+  virtual void bin_atoms_setup(int);
+  bigint memory_usage();
+
+  virtual void setup_bins(int) = 0;
+  virtual void bin_atoms() = 0;
+
+
+  int maxbin;                       // size of binhead array
+  int maxatom;                      // size of bins array
+
+  // methods
+
+  long coord2bin(double *);
+  long coord2bin(double *, int&, int&, int&);
+  void bin_center(int, int, int, double*);
+ protected:
+
+  // data from Neighbor class
+
+  int includegroup;
+  double cutneighmin;
+  double cutneighmax;
+  int binsizeflag;
+  double binsize_user;
+  double *bboxlo,*bboxhi;
+
+  // data common to all NBin variants
+
+  int dimension;
+  int triclinic;
+
+};
+
+}
+
+#endif
+
+/* ERROR/WARNING messages:
+
+E: Non-numeric positions - simulation unstable
+
+UNDOCUMENTED
+
+*/

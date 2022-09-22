@@ -1,0 +1,4 @@
+LOCAL_OBJECTS = \
+cfdemCloudScalar.o\
+passiveScalarDensityModel.o\
+newPassiveScalarDensityModel.o

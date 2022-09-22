@@ -1,0 +1,3 @@
+cfdemsolvercomp.C
+
+EXE=$(CFDEM_APP_DIR)/cfdemsolvercomp

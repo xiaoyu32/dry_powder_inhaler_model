@@ -1,0 +1,120 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createBafflesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Whether to convert internal faces only (so leave boundary faces intact).
+// This is only relevant if your face selection type can pick up boundary
+// faces.
+internalFacesOnly true;
+
+// Baffles to create.
+baffles
+{
+    baffleFacesThermoBaffle1D
+    {
+        //- Use predefined faceZone to select faces and orientation.
+        type        searchableSurface;
+        surface     triSurfaceMesh;
+        name        baffle1D.stl;
+
+        patches
+        {
+            master
+            {
+                //- Master side patch
+                name            baffle1DWall_master;
+
+                type            wall;
+                inGroups        (baffleWallGroup);
+
+                patchFields
+                {
+                    #include "./0/include/wallBafflePatches"
+                    #include "./0/include/1DBaffle/1DTemperatureMasterBafflePatches"
+                }
+            }
+            slave
+            {
+                //- Slave side patch
+                name            baffle1DWall_slave;
+
+                type            wall;
+                inGroups        (baffleWallGroup);
+
+                patchFields
+                {
+                    #include "./0/include/wallBafflePatches"
+                    #include "./0/include/1DBaffle/1DTemperatureSlaveBafflePatches"
+                }
+            }
+        }
+    }
+
+    #include "./0/include/baffle3DSetup"
+
+    baffleFacesThermoBaffle3D
+    {
+        type        searchableSurface;
+        surface     triSurfaceMesh;
+        name        baffle3D.stl;
+
+        patches
+        {
+            master
+            {
+                //- Master side patch
+                name            ${masterPatchName};
+
+                type            mappedWall;
+                inGroups        (baffleWallGroup);
+
+                sampleMode      nearestPatchFace;
+                sampleRegion    ${baffleRegionName};
+                samplePatch     bottom;
+                offsetMode      uniform;
+                offset          (0 0 0);
+
+                patchFields
+                {
+                    #include "./0/include/wallBafflePatches"
+                    #include "./0/include/3DBaffle/3DTemperatureMasterBafflePatches"
+                }
+            }
+            slave
+            {
+                //- Slave side patch
+                name            ${slavePatchName};
+
+                type            mappedWall;
+                inGroups        (baffleWallGroup);
+
+                sampleMode      nearestPatchFace;
+                sampleRegion    ${baffleRegionName};
+                samplePatch     top;
+                offsetMode      uniform;
+                offset          (0 0 0);
+
+                patchFields
+                {
+                    #include "./0/include/wallBafflePatches"
+                    #include "./0/include/3DBaffle/3DTemperatureSlaveBafflePatches"
+                }
+            }
+        }
+    }
+}
+
+
+// ************************************************************************* //

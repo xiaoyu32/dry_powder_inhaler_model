@@ -1,0 +1,2 @@
+include ./particleSlipJohnsonJackson/particleSlipJohnsonJacksonFvPatchVectorField.dep
+include ./particleThetaJohnsonJackson/particleThetaJohnsonJacksonFvPatchScalarField.dep

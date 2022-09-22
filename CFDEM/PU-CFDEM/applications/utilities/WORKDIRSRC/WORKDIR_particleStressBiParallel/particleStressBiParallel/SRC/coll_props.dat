@@ -1,0 +1,9 @@
+k_n			10.e5
+e_c			0.9
+e_t			0.9
+mu_f		0.1
+N_coll		250
+TanHist		true
+LiqTrans	true
+FluidVisc	3.8e-03
+SurfTension 0.001375

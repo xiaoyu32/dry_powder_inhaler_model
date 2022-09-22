@@ -1,0 +1,4 @@
+calcCollisionalForce.C
+particleStress.C
+
+EXE = $(CFDEM_APP_DIR)/particleStress

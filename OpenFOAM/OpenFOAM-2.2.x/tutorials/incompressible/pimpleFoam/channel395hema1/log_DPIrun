@@ -1,0 +1,102 @@
+
+//   DPIrun   //
+
+/home/mostafas/OpenFOAM/OpenFOAM-2.2.x/tutorials/incompressible/pimpleFoam/channel395hema1
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x
+Exec   : cfdemSolverDPI -parallel
+Date   : Jan 21 2020
+Time   : 20:52:10
+Host   : "perseus"
+PID    : 15371
+Case   : /home/mostafas/OpenFOAM/OpenFOAM-2.2.x/tutorials/incompressible/pimpleFoam/channel395hema1
+nProcs : 4
+Slaves : 
+3
+(
+"perseus.15372"
+"perseus.15373"
+"perseus.15374"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Floating point exception trapping - not supported on this platform
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+Reading g
+[1] 
+[1] 
+[1] --> FOAM FATAL IO ERROR: 
+[1] cannot find file
+[1] 
+[1] file: /home/mostafas/OpenFOAM/OpenFOAM-2.2.x/tutorials/incompressible/pimpleFoam/channel395hema1/processor1/constant/g at line 0.
+[1] 
+[1]     From function regIOobject::readStream()
+[1]     in file db/regIOobject/regIOobjectRead.C at line 73.
+[1] 
+FOAM parallel run exiting
+[1] 
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD 
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[0] 
+[0] 
+[0] --> FOAM FATAL IO ERROR: 
+[0] cannot find file
+[0] 
+[0] file: /home/mostafas/OpenFOAM/OpenFOAM-2.2.x/tutorials/incompressible/pimpleFoam/channel395hema1/processor0/constant/g at line 0.
+[0] 
+[0]     From function regIOobject::readStream()
+[0]     in file db/regIOobject/regIOobjectRead.C at line 73.
+[0] 
+FOAM parallel run exiting
+[0] 
+[2] 
+[2] 
+[2] --> FOAM FATAL IO ERROR: 
+[2] cannot find file
+[2] 
+[2] file: /home/mostafas/OpenFOAM/OpenFOAM-2.2.x/tutorials/incompressible/pimpleFoam/channel395hema1/processor2/constant/g at line 0.
+[2] 
+[2]     From function regIOobject::readStream()
+[2]     in file db/regIOobject/regIOobjectRead.C at line 73.
+[2] 
+FOAM parallel run exiting
+[2] 
+[3] 
+[3] 
+[3] --> FOAM FATAL IO ERROR: 
+[3] cannot find file
+[3] 
+[3] file: /home/mostafas/OpenFOAM/OpenFOAM-2.2.x/tutorials/incompressible/pimpleFoam/channel395hema1/processor3/constant/g at line 0.
+[3] 
+[3]     From function regIOobject::readStream()
+[3]     in file db/regIOobject/regIOobjectRead.C at line 73.
+[3] 
+FOAM parallel run exiting
+[3] 
+[perseus:15368] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[perseus:15368] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

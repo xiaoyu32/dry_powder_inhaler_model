@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 68
+dist
+build
+MANIFEST
+multiprocessing.egg-info
+.project
+.pydevproject
+
+END

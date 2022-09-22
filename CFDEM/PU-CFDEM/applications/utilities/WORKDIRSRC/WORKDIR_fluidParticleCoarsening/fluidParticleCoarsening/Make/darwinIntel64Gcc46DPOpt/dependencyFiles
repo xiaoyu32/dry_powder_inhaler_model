@@ -1,0 +1,10 @@
+DEPENDENCIES = \
+domainFilter.dep\
+readVariables.dep\
+dragForce.dep\
+fluidCoarsening.dep\
+createParcel.dep\
+coarsening.dep\
+applyBin.dep\
+output.dep\
+fluidParticleCoarsening.dep

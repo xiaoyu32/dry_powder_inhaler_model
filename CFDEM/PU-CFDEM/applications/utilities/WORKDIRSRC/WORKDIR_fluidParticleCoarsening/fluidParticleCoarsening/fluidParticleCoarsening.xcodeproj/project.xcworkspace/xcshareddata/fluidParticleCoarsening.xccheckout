@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>909080A5-782B-486F-A86A-17ACDA4CC452</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fluidParticleCoarsening</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>66537F75-4F17-4987-938D-BC09919B3539</key>
+		<string>git://github.com/CFDEMproject/CFDEMcoupling-PUBLIC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>applications/utilities/fluidParticleCoarsening/fluidParticleCoarsening.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>66537F75-4F17-4987-938D-BC09919B3539</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git://github.com/CFDEMproject/CFDEMcoupling-PUBLIC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>66537F75-4F17-4987-938D-BC09919B3539</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>66537F75-4F17-4987-938D-BC09919B3539</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CFDEM-PRINCETON</string>
+		</dict>
+	</array>
+</dict>
+</plist>

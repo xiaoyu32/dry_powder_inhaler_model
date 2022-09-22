@@ -1,0 +1,6 @@
+cfdemSolverRhoPimple/dir
+cfdemSolverPiso/dir
+cfdemSolverIB/dir
+cfdemSolverPisoScalar/dir
+cfdemSolverPisoSTM/dir
+cfdemSolverPimpleImExFace/dir

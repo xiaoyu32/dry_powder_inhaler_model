@@ -1,0 +1,3 @@
+./meanCharge/meanChargeFluxFvPatchVectorField.C
+
+LIB = $(FOAM_USER_LIBBIN)/libMeanCharge

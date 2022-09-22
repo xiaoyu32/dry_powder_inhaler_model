@@ -1,0 +1,3 @@
+OBJECTS = \
+$(OBJECTS_DIR)/particleSlipJohnsonJacksonFvPatchVectorField.o\
+$(OBJECTS_DIR)/particleThetaJohnsonJacksonFvPatchScalarField.o

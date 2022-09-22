@@ -1,0 +1,10 @@
+LOCAL_OBJECTS = \
+domainFilter.o\
+readVariables.o\
+dragForce.o\
+fluidCoarsening.o\
+createParcel.o\
+coarsening.o\
+applyBin.o\
+output.o\
+fluidParticleCoarsening.o

@@ -1,0 +1,4 @@
+DEPENDENCIES = \
+cfdemCloudScalar.dep\
+passiveScalarDensityModel.dep\
+newPassiveScalarDensityModel.dep

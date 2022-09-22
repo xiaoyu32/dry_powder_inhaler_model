@@ -1,0 +1,9 @@
+cd $CFDEM_SOLVER_DIR/cfdemSolverDPI
+
+pwd
+
+./lmake
+
+
+
+

@@ -1,0 +1,377 @@
+
+	void multipleCelltoPoints
+	(
+		const fvMesh& mesh,
+		const labelListList& facesBc_l_,
+		const labelListList& facesBc_r_,
+		const labelList& cornerPoints_,
+		labelListList& stencillist_
+	)
+	{
+		stencillist_.resize(mesh.cells().size());							
+		
+		labelHashSet set;
+		for( int cellI = 0; cellI < mesh.cells().size(); cellI++ )
+		//int cellI = 0;
+		{
+			const labelList CelltoPoints = mesh.cellPoints(cellI);	
+			Info << " Cell " << cellI << " Points " << CelltoPoints << endl;
+
+			forAll(CelltoPoints, CelltoPointsI)
+			//int CelltoPointsI = 0;	
+			{
+				Info << " Test point " << CelltoPoints[CelltoPointsI] << endl;				
+				
+				label point = CelltoPoints[CelltoPointsI];
+				
+				forAll(facesBc_r_, j)
+				//int j = 0;
+				{
+					labelList pBc = facesBc_r_[j]; 
+
+					//Info << " point Bc left  " << pointBc_l[j] << endl; 
+					//Info << " point Bc right " << pointBc_r[j] << endl; 
+
+					forAll(pBc,jj)
+					{
+
+						//Info << " Right face Point  " << jj << " " << pointBc_r[j][jj] << mesh.points()[pointBc_r[j][jj]] << endl;
+						
+						if ( pBc[jj] == point )
+						{
+							labelList CelltoPointstoCellsBc(mesh.pointCells(facesBc_l_[j][jj]));
+							
+							// Why? Ordering of point on a surface is done along the surface bounded normal vector
+							if( jj == 1 )
+							{	
+								CelltoPointstoCellsBc = mesh.pointCells(facesBc_l_[j][3]);
+								Info << "  --> Coupled Bc point " << facesBc_l_[j][3] << endl;	
+							}
+							else if( jj == 3 )
+							{	
+								CelltoPointstoCellsBc = mesh.pointCells(facesBc_l_[j][1]);
+								Info << "  --> Coupled Bc point " << facesBc_l_[j][1] << endl;	
+							}
+							else
+							{
+								//CelltoPointstoCellsBc = mesh.pointCells(facesBc_l_[j][jj]);
+								Info << "  --> Coupled Bc point " << facesBc_l_[j][jj] << endl;									
+							}							
+																				
+							
+							forAll(CelltoPointstoCellsBc, CelltoPointstoCellsBcI)
+							{
+								set.insert(CelltoPointstoCellsBc[CelltoPointstoCellsBcI]);
+								
+								Info << "  --> Coupled point added cell " << CelltoPointstoCellsBc[CelltoPointstoCellsBcI] << endl;								
+							}															
+														
+						}
+						
+					}
+					
+				}
+				
+				
+				forAll(facesBc_l_, j)
+				//int j = 0;
+				{
+					labelList pBc = facesBc_l_[j]; 
+					
+					forAll(pBc,jj)
+					{
+						
+						if ( pBc[jj] == point )
+						{
+							
+							labelList CelltoPointstoCellsBc(mesh.pointCells(facesBc_r_[j][jj]));
+							
+							if( jj == 1 )
+							{	
+								CelltoPointstoCellsBc = mesh.pointCells(facesBc_r_[j][3]);
+								Info << "  --> Coupled Bc point " << facesBc_r_[j][3] << endl;	
+							}
+							else if( jj == 3 )
+							{	
+								CelltoPointstoCellsBc = mesh.pointCells(facesBc_r_[j][1]);
+								Info << "  --> Coupled Bc point " << facesBc_r_[j][1] << endl;	
+							}
+							else
+							{
+								//CelltoPointstoCellsBc = mesh.pointCells(facesBc_l_[j][jj]);
+								Info << "  --> Coupled Bc point " << facesBc_r_[j][jj] << endl;									
+							}							
+																				
+							
+							forAll(CelltoPointstoCellsBc, CelltoPointstoCellsBcI)
+							{
+								set.insert(CelltoPointstoCellsBc[CelltoPointstoCellsBcI]);
+								
+								Info << "  --> Coupled point added cell " << CelltoPointstoCellsBc[CelltoPointstoCellsBcI] << endl;								
+							}									
+						}
+					}
+					
+				}
+				
+				// Check corner points, fully periodic domain
+				forAll(cornerPoints_,cPtI)
+				{
+					if ( cornerPoints_[cPtI] == point )
+					{
+						forAll(cornerPoints_,ii)
+						{
+							const labelList CelltoPointstoCells = mesh.pointCells(cornerPoints_[ii]);
+							//Info << CelltoPointstoCells << endl;
+
+							forAll(CelltoPointstoCells, CelltoPointstoCellsI)
+							{						
+								set.insert(CelltoPointstoCells[CelltoPointstoCellsI]);
+							}
+						}
+						
+					}
+					
+					//forAll(cornerPoints,cPtI)
+					//{
+						
+					//}
+					
+				}
+				
+				const labelList CelltoPointstoCells = mesh.pointCells(CelltoPoints[CelltoPointsI]);
+				//Info << CelltoPointstoCells << endl;
+
+				forAll(CelltoPointstoCells, CelltoPointstoCellsI)
+				{						
+					set.insert(CelltoPointstoCells[CelltoPointstoCellsI]);
+				}	
+			
+			Info << " " << endl;					
+
+			}
+			
+			labelList stencillisttest_(mesh.cells().size());			
+			
+			label count = 0;
+			forAllConstIter(labelHashSet,set,iter)
+			{
+				stencillisttest_[count++] = iter.key();
+			}
+			
+			stencillisttest_.resize(count);
+
+			set.clear();			
+			stencillist_[cellI] = stencillisttest_;	
+							
+		}
+		
+	}
+	
+
+
+
+    	void constructfilter
+        (
+                const argList& args,
+                const Time& runTime,
+                const fvMesh& mesh,
+                const int& minfilterwidth,
+                const int& maxfilterwidth,
+                const int& filterincrement,
+                labelListListList& stencillistfilter,
+                const fileName& outputRelativePath_
+        )
+
+        {
+			
+		char charfilterwidth[100];
+		
+		// Find stencils						
+		labelListList stencillist(mesh.cells().size());
+		if ( maxfilterwidth !=0 ) 
+		{
+			stencillistfilter.resize(maxfilterwidth*stencillist.size());				
+		}
+		else // avoid list with zero length for filter 3X3X3
+		{
+			stencillistfilter.resize(stencillist.size());	
+		}
+
+
+		// Boundary patches
+		// Find coupled patches
+		const polyBoundaryMesh& patches = mesh.boundaryMesh();
+
+		label nCoupled = 0;
+		label nCoupledPatches = 0; 	
+		forAll(patches, patchI)
+		{
+			const polyPatch& pp = patches[patchI];
+
+			if (pp.coupled())
+			{
+			    nCoupled += pp.size();
+			    nCoupledPatches++;
+			}					    
+		}
+
+		labelList coupledFaces(nCoupled);
+		nCoupled = 0;
+
+		forAll(patches, patchI)
+		{
+			const polyPatch& pp = patches[patchI];
+
+			if (pp.coupled())
+			{
+			    label faceI = pp.start();
+
+			    forAll(pp, i)
+			    {
+				coupledFaces[nCoupled++] = faceI++;
+			    }
+			}
+		}
+
+		Info << " Number of coupled patches = " << nCoupledPatches << endl;
+		Info << " Number of coupled faces = " << coupledFaces.size() << endl;
+
+		const int nFaces = coupledFaces.size()/nCoupledPatches;	
+		   		    
+		labelListList facesBc_l(mesh.nPoints());
+		labelListList facesBc_r(mesh.nPoints());
+
+		label count = 0;
+		for( label nP = 0; nP < nCoupledPatches/2; nP++ )
+		{
+			for( label faceI = 2*nP*nFaces; faceI < (2*nP+1)*nFaces; faceI++) 
+			{	
+				//Info << " Face left " << coupledFaces[faceI] << " Face right " << coupledFaces[faceI+nFaces] << endl;			
+				//Info << mesh.faces()[coupledFaces[faceI]] 	 << endl;
+				//Info << mesh.faces()[coupledFaces[faceI+nFaces]]  << endl;
+				facesBc_l[count] = mesh.faces()[coupledFaces[faceI]];
+				facesBc_r[count] = mesh.faces()[coupledFaces[faceI+nFaces]];
+				count++;
+			} 
+		}	
+			
+		facesBc_l.resize(count);
+		facesBc_r.resize(count);
+	
+		Info << " " << endl;
+		
+		// Create corner points
+		count = 0; 
+		labelList cornerPoints(mesh.nPoints());
+		forAll(mesh.points(),ptI)
+		{
+			if ( mesh.pointEdges()[ptI].size() <= 3 ) cornerPoints[count++] = ptI;
+		}
+		cornerPoints.resize(count);
+		Info << " Corner points " << cornerPoints << endl;
+		
+		forAll(cornerPoints,cPtI)
+		{
+			Info << mesh.pointPoints()[cornerPoints[cPtI]] << endl;
+		}
+		// Create stencil list folder if not exist
+		if( !isDir(mesh.time().path()/outputRelativePath_) )
+		{
+			mkDir(mesh.time().path()/outputRelativePath_);													
+ 
+			for( int filterwidth = minfilterwidth; filterwidth <= maxfilterwidth; filterwidth += filterincrement )
+			{
+				int Filter = 2*(filterwidth+1)+1;
+				sprintf(charfilterwidth, "stencils_%dX%dX%d",Filter,Filter,Filter);
+				fileName outputfile(charfilterwidth);		
+
+				if ( !isFile(mesh.time().path()/outputRelativePath_/outputfile) )
+				{
+					Info << "Creating stencil list for " << Filter << "X" << Filter << "X" << Filter << " filter " << endl;
+					OFstream str_stencil(mesh.time().path()/outputRelativePath_/outputfile);
+				
+					// Call multipleCelltoPoints
+					multipleCelltoPoints
+					(
+                				mesh,
+						facesBc_l,
+						facesBc_r,
+						cornerPoints,
+						stencillist								
+					);
+
+					forAll(mesh.cells(),cellI)
+					{										
+						labelList cellSt = stencillist[cellI];
+						str_stencil << cellSt.size() << "( " ;
+
+						forAll(cellSt,StI)
+						{
+							str_stencil << cellSt[StI] << " " ;
+						}
+						str_stencil << ")" << nl;
+					}
+
+					stencillistfilter[filterwidth] = stencillist;
+				}	
+
+			}	
+		}
+		else
+		{
+			for( int filterwidth = minfilterwidth; filterwidth <= maxfilterwidth; filterwidth += filterincrement )
+			{
+				int Filter = 2*(filterwidth+1)+1;
+				sprintf(charfilterwidth, "stencils_%dX%dX%d",Filter,Filter,Filter);
+				fileName outputfile(charfilterwidth);
+				
+				/*
+				if ( isFile(mesh.time().path()/outputRelativePath_/outputfile) )
+				{					
+					Info << "Reading stencil list for " << Filter << "X" << Filter << "X" << Filter << " filter " << endl;	
+					IFstream str_stencil(mesh.time().path()/outputRelativePath_/outputfile);
+					forAll(mesh.cells(),cellI)
+					{
+						str_stencil >> stencillist[cellI];
+					}
+					
+					stencillistfilter[filterwidth] = stencillist;																			
+				}
+				else
+				*/
+				{
+					Info << "Creating stencil list for " << Filter << "X" << Filter << "X" << Filter << " filter " << endl;
+					OFstream str_stencil(mesh.time().path()/outputRelativePath_/outputfile);
+					
+					// Call multipleCelltoPoints
+					multipleCelltoPoints
+					(
+                				mesh,
+						facesBc_l,
+						facesBc_r,
+						cornerPoints,
+						stencillist		
+					);
+					
+					forAll(mesh.cells(),cellI)
+					{
+										
+						labelList cellSt = stencillist[cellI];
+						str_stencil << cellSt.size() << "( " ;
+						
+						forAll(cellSt,StI)
+						{
+							str_stencil << cellSt[StI] << " " ;
+						}
+						str_stencil << ")" << nl;
+
+					}
+					
+					stencillistfilter[filterwidth] = stencillist;					
+				}				
+												
+			}			
+		}				
+
+	}	

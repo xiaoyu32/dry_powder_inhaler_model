@@ -1,0 +1,139 @@
+	
+	
+	void filteredDragCoefficient
+	(
+		cfdemCloud& sm,
+		const bool& verbose_,
+		const volScalarField& alpf_,
+		const volVectorField& Uf_,
+		const volVectorField& tildeUf_,
+		const volScalarField& barPg_,
+		const volScalarField& p_,
+		const volScalarField& rho_,
+		const vectorField& DragForce_,
+		vectorField& ResolvedDragForce_,
+		vectorField& gii_,
+		const labelList& partIDInSubVolume_
+	)
+	{
+		// get viscosity field
+		#ifdef comp
+		    const volScalarField nufField = sm.turbulence().mu()/rho_;
+		#else
+		    const volScalarField& nufField = sm.turbulence().nu();
+		#endif
+		
+		// Local variables	
+		label  cellI=0;
+		vector gradPg_int(0,0,0);
+		vector gradbarPg_int(0,0,0);		
+		
+		vector position(0,0,0);	
+	    vector Ufluid(0,0,0);
+		vector tildeUfluid(0,0,0);			
+		vector Up(0,0,0);
+		vector Ur(0,0,0);
+		
+		scalar ds(0);
+		scalar Volp(0);	
+		
+		vector WenYuDrag(0,0,0);
+		scalar voidfraction(0);
+		scalar rhof(0);
+		scalar nuf(0);	
+
+		volVectorField gradp_ = fvc::grad(p_);							
+		volVectorField gradbarPg_ = fvc::grad(barPg_);
+									   
+		interpolationCellPoint<vector> gradPgInterpolator_(gradp_);
+		interpolationCellPoint<vector> gradbarPgInterpolator_(gradbarPg_);
+		interpolationCellPoint<vector> UInterpolator_(Uf_);	
+		interpolationCellPoint<vector> tildeUInterpolator_(tildeUf_);	
+		   
+		interpolationCellPoint<scalar> voidfractionInterpolator_(alpf_);
+		   
+	    // Filtered drag coefficient 
+		//vectorField barBetai_(sm.numberOfParticles());
+		vectorField barBetai_(partIDInSubVolume_.size());
+		//gii_.resize(sm.numberOfParticles());
+		gii_.resize(partIDInSubVolume_.size());
+			
+	     // Calculate resolved drag force
+	    CalculateDragForce
+		(
+			sm,
+			alpf_,
+			tildeUf_,
+			rho_,
+			verbose_,
+			ResolvedDragForce_,
+			partIDInSubVolume_
+		);  
+			
+		//for(int index = 0; index <  sm.numberOfParticles(); index++)
+	    for(int ii =0; ii < partIDInSubVolume_.size(); ii++)
+		{
+				int index = partIDInSubVolume_[ii];
+				
+				//Pout << " Filtered drag loop " << index << endl; 
+				
+				cellI = sm.cellIDs()[index][0];						
+			//if( cellI > -1 )
+			//{
+					position = sm.position(index);
+					gradPg_int = gradPgInterpolator_.interpolate(position,cellI);
+					gradbarPg_int = gradbarPgInterpolator_.interpolate(position,cellI);
+					Ufluid = UInterpolator_.interpolate(position,cellI);					
+					tildeUfluid = tildeUInterpolator_.interpolate(position,cellI);
+					Up = sm.velocity(index);
+					Ur = tildeUfluid-Up;
+					ds = 2*sm.radius(index);
+					Volp = ds*ds*ds*M_PI/6;
+					
+					//Info << index << " " << gradPg_int << " " << gradbarPg_int << " " << Ufluid << " " << " " << tildeUfluid << endl;
+ 						
+					// Calculate WenYu Drag 
+					voidfraction = voidfractionInterpolator_.interpolate(position,cellI);
+					nuf = nufField[cellI];
+					rhof = rho_[cellI];	
+					WenYuDragForce(Ur,ds,rhof,nuf,voidfraction,WenYuDrag);	
+										
+					for(int j=0;j<3;j++) 
+					{						
+							//barBetai_[index][j]  = ( - Volp * gradPg_int[j]
+							//	 		 + Volp * gradbarPg_int[j]
+							//			 + DragForce_[index][j] 
+							//			) / ( Ur[j] + SMALL ) ;
+							
+							barBetai_[ii][j]  = ( - Volp * gradPg_int[j]
+								 		 		  + Volp * gradbarPg_int[j]
+										 		  //+ DragForce_[ii][j] 
+												  + WenYuDrag[j]
+													  						) / ( Ur[j] + SMALL ) ;
+														
+							//gii_[index][j] = barBetai_[index][j] * (Ufluid[j] - Up[j])
+							//	            / ( DragForce_[index][j] + SMALL );
+						
+							gii_[ii][j] = barBetai_[ii][j] * (Ufluid[j] - Up[j])
+								            / ( 
+												//DragForce_[ii][j] 
+												WenYuDrag[j]
+												+ SMALL );	
+									    
+							//if(verbose_ && index <= 1)							
+							
+					}	
+				
+		}
+		
+		if(verbose_ )
+		{
+			int index = 0;			
+			Pout << " barBetai " << barBetai_[index] << endl;
+			Pout << " gii      " << gii_[index]      << endl;		
+		}
+		
+		//Pout << gii_ << endl ;		
+		 
+		Pout << " end of filteredDragCoefficient " << endl; 
+   	}	

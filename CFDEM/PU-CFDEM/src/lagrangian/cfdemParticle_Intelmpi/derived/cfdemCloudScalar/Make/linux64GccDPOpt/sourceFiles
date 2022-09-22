@@ -1,0 +1,6 @@
+SOURCE = \
+$(locateModels)/locateModelPU/locateModelPU.C\
+$(locateModels)/locateModelPU/newLocateModelPU.C\
+$(locateModels)/standardSearchPU/standardSearchPU.C\
+$(locateModels)/engineSearchPU/engineSearchPU.C\
+cfdemCloudPU/cfdemCloudPU.C

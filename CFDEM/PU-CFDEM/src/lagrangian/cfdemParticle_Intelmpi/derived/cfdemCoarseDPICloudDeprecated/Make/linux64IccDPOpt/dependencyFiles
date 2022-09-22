@@ -1,0 +1,6 @@
+DEPENDENCIES = \
+apiDensityModel.dep\
+cfdemCoarseDPICloud.dep\
+newAPIDensityModel.dep\
+$(CFDEM_SRC_DIR)/subModels/apiTransferModel/vanWachem/vanWachem.dep\
+$(CFDEM_SRC_DIR)/subModels/apiTransferModel/noTransfer/noTransfer.dep

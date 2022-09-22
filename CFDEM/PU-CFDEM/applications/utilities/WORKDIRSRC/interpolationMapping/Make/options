@@ -1,0 +1,16 @@
+EXE_INC = \
+    -I$(LIB_SRC)/turbulenceModels/incompressible/turbulenceModel \
+    -I$(LIB_SRC)/transportModels \
+    -I$(LIB_SRC)/transportModels/incompressible/singlePhaseTransportModel \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(CFDEM_SRC_DIR)/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude 
+
+EXE_LIBS = \
+    -L$(FOAM_USER_LIBBIN)\
+    -lincompressibleTransportModels \
+    -lincompressibleTurbulenceModel \
+    -lincompressibleRASModels \
+    -lincompressibleLESModels \
+    -lfiniteVolume \
+    -l$(CFDEM_LIB_NAME)

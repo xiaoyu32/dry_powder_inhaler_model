@@ -1,0 +1,3 @@
+cfdemSolverPimplePEACharge.C
+
+EXE=$(CFDEM_APP_DIR)/cfdemSolverPimplePEACharge

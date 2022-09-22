@@ -1,0 +1,7 @@
+newPolarizationModel.C
+polarizationModel.C
+newPermittivityModel.C
+permittivityModel.C
+cfdemCloudChargePolarization.C
+
+LIB = $(FOAM_USER_LIBBIN)/lib$(CFDEM_LIB_NAME)ChargePolarization

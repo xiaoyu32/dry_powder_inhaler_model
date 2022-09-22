@@ -1,0 +1,4 @@
+LOCAL_OBJECTS = \
+outputWrite.o\
+calcCollisionalForce.o\
+particleStressBiParallel.o

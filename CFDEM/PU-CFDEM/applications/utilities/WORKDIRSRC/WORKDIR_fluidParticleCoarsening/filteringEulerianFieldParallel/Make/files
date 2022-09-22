@@ -1,0 +1,11 @@
+domainFilter.C
+readVariables.C
+dragForce.C
+fluidCoarsening.C
+createParcel.C
+coarsening.C
+applyBin.C
+output.C
+filteringEulerianFieldParallel.C
+
+EXE = $(CFDEM_APP_DIR)/filteringEulerianFieldParallel

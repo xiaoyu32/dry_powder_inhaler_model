@@ -1,0 +1,16 @@
+cfdemCloud = cfdemCloud
+forceModels = subModels/forceModel
+IOModels = subModels/IOModel
+voidFractionModels = subModels/voidFractionModel
+locateModels = subModels/locateModel
+meshMotionModels = subModels/meshMotionModel
+momCoupleModels = subModels/momCoupleModel
+regionModels = subModels/regionModel
+dataExchangeModels = subModels/dataExchangeModel
+averagingModels = subModels/averagingModel
+clockModels = subModels/clockModel
+liggghtsCommandModels = subModels/liggghtsCommandModel
+smoothingModels = subModels/smoothingModel
+parcelApproachs = subModels/parcelApproach
+probeModels = subModels/probeModel
+LIB = $(CFDEM_LIB_DIR)/lib$(CFDEM_LIB_NAME)

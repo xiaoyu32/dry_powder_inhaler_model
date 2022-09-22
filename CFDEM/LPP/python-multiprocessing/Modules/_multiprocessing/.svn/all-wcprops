@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/70/trunk/Modules/_multiprocessing
+END
+semaphore.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/70/trunk/Modules/_multiprocessing/semaphore.c
+END
+connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/55/trunk/Modules/_multiprocessing/connection.h
+END
+multiprocessing.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/Modules/_multiprocessing/multiprocessing.c
+END
+socket_connection.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/55/trunk/Modules/_multiprocessing/socket_connection.c
+END
+win32_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/70/trunk/Modules/_multiprocessing/win32_functions.c
+END
+pipe_connection.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/55/trunk/Modules/_multiprocessing/pipe_connection.c
+END
+multiprocessing.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/70/trunk/Modules/_multiprocessing/multiprocessing.h
+END

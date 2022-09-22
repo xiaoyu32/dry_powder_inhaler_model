@@ -1,0 +1,6 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+cfdemCloudPerio.C
+
+LIB = $(FOAM_USER_LIBBIN)/lib$(CFDEM_LIB_NAME)Perio

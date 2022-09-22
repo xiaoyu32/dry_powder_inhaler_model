@@ -1,0 +1,3 @@
+cfdemSolverInsulatingElectricMixturePermittivity.C
+
+EXE=$(CFDEM_APP_DIR)/cfdemSolverInsulatingElectricMixturePermittivity

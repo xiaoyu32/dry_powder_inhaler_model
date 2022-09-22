@@ -1,0 +1,5 @@
+include $(locateModels)/locateModelPU/locateModelPU.dep
+include $(locateModels)/locateModelPU/newLocateModelPU.dep
+include $(locateModels)/standardSearchPU/standardSearchPU.dep
+include $(locateModels)/engineSearchPU/engineSearchPU.dep
+include cfdemCloudPU/cfdemCloudPU.dep

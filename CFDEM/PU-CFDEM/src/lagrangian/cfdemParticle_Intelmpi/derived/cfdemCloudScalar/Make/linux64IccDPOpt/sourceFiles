@@ -1,0 +1,4 @@
+SOURCE = \
+cfdemCloudScalar.C\
+passiveScalarDensityModel.C\
+newPassiveScalarDensityModel.C

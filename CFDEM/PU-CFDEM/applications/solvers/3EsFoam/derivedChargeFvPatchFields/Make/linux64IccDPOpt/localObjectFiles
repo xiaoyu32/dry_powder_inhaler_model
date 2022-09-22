@@ -1,0 +1,2 @@
+LOCAL_OBJECTS = \
+meanChargeFluxFvPatchVectorField.o

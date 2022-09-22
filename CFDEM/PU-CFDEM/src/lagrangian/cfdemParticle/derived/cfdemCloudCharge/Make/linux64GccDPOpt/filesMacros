@@ -1,0 +1,2 @@
+locateModels = subModelsPU/locateModelPU
+LIB = $(FOAM_USER_LIBBIN)/lib$(CFDEM_LIB_NAME)PU

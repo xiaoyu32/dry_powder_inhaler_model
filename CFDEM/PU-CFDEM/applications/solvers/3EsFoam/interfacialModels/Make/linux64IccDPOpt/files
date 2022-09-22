@@ -1,0 +1,47 @@
+# 1 "files"
+# 1 "<built-in>"
+# 1 "<command-line>"
+
+
+
+
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+
+# 17 "/usr/include/stdc-predef.h" 3 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 4 "<command-line>" 2
+# 1 "files"
+dragModels/dragModel/dragModel.C
+dragModels/dragModel/newDragModel.C
+dragModels/Ergun/Ergun.C
+dragModels/GidaspowErgunWenYu/GidaspowErgunWenYu.C
+dragModels/GidaspowSchillerNaumann/GidaspowSchillerNaumann.C
+dragModels/SchillerNaumann/SchillerNaumann.C
+dragModels/Gibilaro/Gibilaro.C
+dragModels/WenYu/WenYu.C
+dragModels/SyamlalOBrien/SyamlalOBrien.C
+dragModels/noDrag/noDrag.C
+
+LIB = $(FOAM_USER_LIBBIN)/libEulerianInterfacialModels

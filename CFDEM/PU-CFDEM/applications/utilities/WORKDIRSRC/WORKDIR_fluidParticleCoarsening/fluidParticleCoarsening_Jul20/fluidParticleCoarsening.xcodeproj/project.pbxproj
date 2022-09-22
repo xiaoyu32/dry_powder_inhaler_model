@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		1D427EFC196C55090057DDB5 /* applyBin.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = applyBin.C; sourceTree = "<group>"; };
+		1D427EFE196C55090057DDB5 /* applyBin.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = applyBin.H; sourceTree = "<group>"; };
+		1D427EFF196C55090057DDB5 /* coarseningPar.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coarseningPar.C; sourceTree = "<group>"; };
+		1D427F01196C55090057DDB5 /* coarseningPar.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = coarseningPar.H; sourceTree = "<group>"; };
+		1D427F02196C55090057DDB5 /* createFields.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = createFields.H; sourceTree = "<group>"; };
+		1D427F03196C55090057DDB5 /* createParcel.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = createParcel.C; sourceTree = "<group>"; };
+		1D427F05196C55090057DDB5 /* createParcel.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = createParcel.H; sourceTree = "<group>"; };
+		1D427F06196C55090057DDB5 /* domainFilter.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = domainFilter.C; sourceTree = "<group>"; };
+		1D427F08196C55090057DDB5 /* domainFilter.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = domainFilter.H; sourceTree = "<group>"; };
+		1D427F09196C55090057DDB5 /* dragForce.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dragForce.C; sourceTree = "<group>"; };
+		1D427F0B196C55090057DDB5 /* dragForce.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dragForce.H; sourceTree = "<group>"; };
+		1D427F0C196C55090057DDB5 /* FilterVariables.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterVariables.H; sourceTree = "<group>"; };
+		1D427F0D196C55090057DDB5 /* fluidCoarsening.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fluidCoarsening.C; sourceTree = "<group>"; };
+		1D427F0F196C55090057DDB5 /* fluidCoarsening.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fluidCoarsening.H; sourceTree = "<group>"; };
+		1D427F10196C55090057DDB5 /* fluidParticleCoarsening.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fluidParticleCoarsening.C; sourceTree = "<group>"; };
+		1D427F12196C55090057DDB5 /* fluidParticleCoarsening.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fluidParticleCoarsening.H; sourceTree = "<group>"; };
+		1D427F13196C55090057DDB5 /* output.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = output.C; sourceTree = "<group>"; };
+		1D427F16196C55400057DDB5 /* applyBin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = applyBin.o; sourceTree = "<group>"; };
+		1D427F17196C55400057DDB5 /* coarseningPar.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = coarseningPar.o; sourceTree = "<group>"; };
+		1D427F18196C55400057DDB5 /* createParcel.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = createParcel.o; sourceTree = "<group>"; };
+		1D427F19196C55400057DDB5 /* dependencies */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dependencies; sourceTree = "<group>"; };
+		1D427F1A196C55400057DDB5 /* dependencyFiles */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dependencyFiles; sourceTree = "<group>"; };
+		1D427F1B196C55400057DDB5 /* domainFilter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = domainFilter.o; sourceTree = "<group>"; };
+		1D427F1C196C55400057DDB5 /* dontIncludeDeps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dontIncludeDeps; sourceTree = "<group>"; };
+		1D427F1D196C55400057DDB5 /* dragForce.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = dragForce.o; sourceTree = "<group>"; };
+		1D427F1E196C55400057DDB5 /* files */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = files; sourceTree = "<group>"; };
+		1D427F1F196C55400057DDB5 /* filesMacros */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filesMacros; sourceTree = "<group>"; };
+		1D427F20196C55400057DDB5 /* fluidCoarsening.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = fluidCoarsening.o; sourceTree = "<group>"; };
+		1D427F21196C55400057DDB5 /* fluidParticleCoarsening.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = fluidParticleCoarsening.o; sourceTree = "<group>"; };
+		1D427F22196C55400057DDB5 /* includeDeps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = includeDeps; sourceTree = "<group>"; };
+		1D427F23196C55400057DDB5 /* localObjectFiles */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = localObjectFiles; sourceTree = "<group>"; };
+		1D427F24196C55400057DDB5 /* objectFiles */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objectFiles; sourceTree = "<group>"; };
+		1D427F25196C55400057DDB5 /* options */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options; sourceTree = "<group>"; };
+		1D427F26196C55400057DDB5 /* output.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = output.o; sourceTree = "<group>"; };
+		1D427F27196C55400057DDB5 /* readVariables.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readVariables.o; sourceTree = "<group>"; };
+		1D427F28196C55400057DDB5 /* sourceFiles */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sourceFiles; sourceTree = "<group>"; };
+		1D427F29196C55400057DDB5 /* files */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = files; sourceTree = "<group>"; };
+		1D427F2A196C55400057DDB5 /* options */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options; sourceTree = "<group>"; };
+		1D427F2B196C55400057DDB5 /* output.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = output.H; sourceTree = "<group>"; };
+		1D427F2C196C55400057DDB5 /* readVariables.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readVariables.C; sourceTree = "<group>"; };
+		1D427F2D196C55400057DDB5 /* readVariables.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = readVariables.H; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1D427F14196C55400057DDB5 /* Make */ = {
+			isa = PBXGroup;
+			children = (
+				1D427F15196C55400057DDB5 /* darwinIntel64Gcc46DPOpt */,
+				1D427F29196C55400057DDB5 /* files */,
+				1D427F2A196C55400057DDB5 /* options */,
+			);
+			path = Make;
+			sourceTree = "<group>";
+		};
+		1D427F15196C55400057DDB5 /* darwinIntel64Gcc46DPOpt */ = {
+			isa = PBXGroup;
+			children = (
+				1D427F16196C55400057DDB5 /* applyBin.o */,
+				1D427F17196C55400057DDB5 /* coarseningPar.o */,
+				1D427F18196C55400057DDB5 /* createParcel.o */,
+				1D427F19196C55400057DDB5 /* dependencies */,
+				1D427F1A196C55400057DDB5 /* dependencyFiles */,
+				1D427F1B196C55400057DDB5 /* domainFilter.o */,
+				1D427F1C196C55400057DDB5 /* dontIncludeDeps */,
+				1D427F1D196C55400057DDB5 /* dragForce.o */,
+				1D427F1E196C55400057DDB5 /* files */,
+				1D427F1F196C55400057DDB5 /* filesMacros */,
+				1D427F20196C55400057DDB5 /* fluidCoarsening.o */,
+				1D427F21196C55400057DDB5 /* fluidParticleCoarsening.o */,
+				1D427F22196C55400057DDB5 /* includeDeps */,
+				1D427F23196C55400057DDB5 /* localObjectFiles */,
+				1D427F24196C55400057DDB5 /* objectFiles */,
+				1D427F25196C55400057DDB5 /* options */,
+				1D427F26196C55400057DDB5 /* output.o */,
+				1D427F27196C55400057DDB5 /* readVariables.o */,
+				1D427F28196C55400057DDB5 /* sourceFiles */,
+			);
+			path = darwinIntel64Gcc46DPOpt;
+			sourceTree = "<group>";
+		};
+		1DF8303F196C4EBE00F2AADC = {
+			isa = PBXGroup;
+			children = (
+				1D427F14196C55400057DDB5 /* Make */,
+				1D427F2B196C55400057DDB5 /* output.H */,
+				1D427F2C196C55400057DDB5 /* readVariables.C */,
+				1D427F2D196C55400057DDB5 /* readVariables.H */,
+				1D427EFC196C55090057DDB5 /* applyBin.C */,
+				1D427EFE196C55090057DDB5 /* applyBin.H */,
+				1D427EFF196C55090057DDB5 /* coarseningPar.C */,
+				1D427F01196C55090057DDB5 /* coarseningPar.H */,
+				1D427F02196C55090057DDB5 /* createFields.H */,
+				1D427F03196C55090057DDB5 /* createParcel.C */,
+				1D427F05196C55090057DDB5 /* createParcel.H */,
+				1D427F06196C55090057DDB5 /* domainFilter.C */,
+				1D427F08196C55090057DDB5 /* domainFilter.H */,
+				1D427F09196C55090057DDB5 /* dragForce.C */,
+				1D427F0B196C55090057DDB5 /* dragForce.H */,
+				1D427F0C196C55090057DDB5 /* FilterVariables.H */,
+				1D427F0D196C55090057DDB5 /* fluidCoarsening.C */,
+				1D427F0F196C55090057DDB5 /* fluidCoarsening.H */,
+				1D427F10196C55090057DDB5 /* fluidParticleCoarsening.C */,
+				1D427F12196C55090057DDB5 /* fluidParticleCoarsening.H */,
+				1D427F13196C55090057DDB5 /* output.C */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		1DF83044196C4EBE00F2AADC /* fluidParticleCoarsening */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 1DF83047196C4EBE00F2AADC /* Build configuration list for PBXLegacyTarget "fluidParticleCoarsening" */;
+			buildPhases = (
+			);
+			buildToolPath = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/wmakeMacOSX/wmake";
+			dependencies = (
+			);
+			name = fluidParticleCoarsening;
+			passBuildSettingsInEnvironment = 1;
+			productName = fluidParticleCoarsening;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		1DF83040196C4EBE00F2AADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ali Ozel";
+				TargetAttributes = {
+					1DF83044196C4EBE00F2AADC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 1DF83043196C4EBE00F2AADC /* Build configuration list for PBXProject "fluidParticleCoarsening" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1DF8303F196C4EBE00F2AADC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DF83044196C4EBE00F2AADC /* fluidParticleCoarsening */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1DF83045196C4EBE00F2AADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DF83046196C4EBE00F2AADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1DF83048196C4EBE00F2AADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CFDEM_APP_DIR = "/Users/aliozel/OpenFOAM/aliozel-2.2.2/platforms/darwinIntel64Gcc46DPOpt/bin";
+				CFDEM_LIB_DIR = "/Users/aliozel/OpenFOAM/aliozel-2.2.2/platforms/darwinIntel64Gcc46DPOpt/lib";
+				CFDEM_LIB_NAME = "lagrangianCFDEM-PRINCETON";
+				CFDEM_PROJECT_USER_DIR = "/Users/aliozel/OpenFOAM/aliozel-PRINCETON";
+				CFDEM_SRC_DIR = "/Users/aliozel/OpenFOAM/CFDEM-PRINCETON/src/lagrangian/cfdemParticle";
+				DEBUGGING_SYMBOLS = YES;
+				FOAM_APPBIN = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/platforms/darwinIntel64Gcc46DPOpt/bin";
+				FOAM_LIBBIN = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/platforms/darwinIntel64Gcc46DPOpt/lib";
+				FOAM_MPI = "openmpi-1.6.3";
+				FOAM_USER_LIBBIN = "/Users/aliozel/OpenFOAM/aliozel-2.2.2/platforms/darwinIntel64Gcc46DPOpt/lib";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WM_ARCH = darwinIntel64;
+				WM_ARCH_BASE = darwin;
+				WM_ARCH_OPTION = 64;
+				WM_CC = "/opt/local/bin/gcc-mp-4.6";
+				WM_CFLAGS = "-m64 -fPIC";
+				WM_COMPILER = Gcc46;
+				WM_COMPILER_LIB_ARCH = 64;
+				WM_COMPILE_OPTION = Opt;
+				WM_CXX = "/opt/local/bin/g++-mp-4.6";
+				WM_CXXFLAGS = "-m64 -fPIC";
+				WM_DIR = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/wmake";
+				WM_LDFLAGS = "-m64";
+				WM_LINK_LANGUAGE = "c++";
+				WM_MACPORT_VERSION = darwinIntel64Gcc46DPOpt;
+				WM_MPLIB = OPENMPI;
+				WM_NCOMPPROCS = 4;
+				WM_OPTIONS = darwinIntel64Gcc46DPOpt;
+				WM_OSTYPE = POSIX;
+				WM_PRECISION_OPTION = DP;
+				WM_PROJECT = OpenFOAM;
+				WM_PROJECT_DIR = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2";
+				WM_PROJECT_INST_DIR = /Users/aliozel/OpenFOAM;
+				WM_PROJECT_USER_DIR = "/Users/aliozel/OpenFOAM/aliozel-2.2.2";
+				WM_PROJECT_VERSION = 2.2.2;
+				WM_THIRD_PARTY = "/Users/aliozel/OpenFOAM/ThirdParty-2.2.2";
+				WM_USE_MACPORT = 1;
+			};
+			name = Debug;
+		};
+		1DF83049196C4EBE00F2AADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CFDEM_APP_DIR = "/Users/aliozel/OpenFOAM/aliozel-2.2.2/platforms/darwinIntel64Gcc46DPOpt/bin";
+				CFDEM_LIB_DIR = "/Users/aliozel/OpenFOAM/aliozel-2.2.2/platforms/darwinIntel64Gcc46DPOpt/lib";
+				CFDEM_LIB_NAME = "lagrangianCFDEM-PRINCETON";
+				CFDEM_PROJECT_USER_DIR = "/Users/aliozel/OpenFOAM/aliozel-PRINCETON";
+				CFDEM_SRC_DIR = "/Users/aliozel/OpenFOAM/CFDEM-PRINCETON/src/lagrangian/cfdemParticle";
+				FOAM_APPBIN = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/platforms/darwinIntel64Gcc46DPOpt/bin";
+				FOAM_LIBBIN = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/platforms/darwinIntel64Gcc46DPOpt/lib";
+				FOAM_MPI = "openmpi-1.6.3";
+				FOAM_USER_LIBBIN = "/Users/aliozel/OpenFOAM/aliozel-2.2.2/platforms/darwinIntel64Gcc46DPOpt/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WM_ARCH = darwinIntel64;
+				WM_ARCH_BASE = darwin;
+				WM_ARCH_OPTION = 64;
+				WM_CC = "/opt/local/bin/gcc-mp-4.6";
+				WM_CFLAGS = "-m64 -fPIC";
+				WM_COMPILER = Gcc46;
+				WM_COMPILER_LIB_ARCH = 64;
+				WM_COMPILE_OPTION = Opt;
+				WM_CXX = "/opt/local/bin/g++-mp-4.6";
+				WM_CXXFLAGS = "-m64 -fPIC";
+				WM_DIR = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2/wmake";
+				WM_LDFLAGS = "-m64";
+				WM_LINK_LANGUAGE = "c++";
+				WM_MACPORT_VERSION = darwinIntel64Gcc46DPOpt;
+				WM_MPLIB = OPENMPI;
+				WM_NCOMPPROCS = 4;
+				WM_OPTIONS = darwinIntel64Gcc46DPOpt;
+				WM_OSTYPE = POSIX;
+				WM_PRECISION_OPTION = DP;
+				WM_PROJECT = OpenFOAM;
+				WM_PROJECT_DIR = "/Users/aliozel/OpenFOAM/OpenFOAM-2.2.2";
+				WM_PROJECT_INST_DIR = /Users/aliozel/OpenFOAM;
+				WM_PROJECT_USER_DIR = "/Users/aliozel/OpenFOAM/aliozel-2.2.2";
+				WM_PROJECT_VERSION = 2.2.2;
+				WM_THIRD_PARTY = "/Users/aliozel/OpenFOAM/ThirdParty-2.2.2";
+				WM_USE_MACPORT = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DF83043196C4EBE00F2AADC /* Build configuration list for PBXProject "fluidParticleCoarsening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF83045196C4EBE00F2AADC /* Debug */,
+				1DF83046196C4EBE00F2AADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF83047196C4EBE00F2AADC /* Build configuration list for PBXLegacyTarget "fluidParticleCoarsening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF83048196C4EBE00F2AADC /* Debug */,
+				1DF83049196C4EBE00F2AADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DF83040196C4EBE00F2AADC /* Project object */;
+}

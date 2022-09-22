@@ -1,0 +1,7 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+createParcels.C
+parcelScaleGranularTemperature.C
+
+EXE = $(CFDEM_APP_DIR)/parcelScaleGranularTemperature

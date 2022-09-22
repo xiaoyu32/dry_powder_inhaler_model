@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/70/trunk/Doc/includes
+END
+mp_workers.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/51/trunk/Doc/includes/mp_workers.py
+END
+mp_benchmarks.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/51/trunk/Doc/includes/mp_benchmarks.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/34/trunk/Doc/includes/__init__.py
+END
+mp_webserver.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/51/trunk/Doc/includes/mp_webserver.py
+END
+mp_distributing.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/70/trunk/Doc/includes/mp_distributing.py
+END
+mp_pool.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/51/trunk/Doc/includes/mp_pool.py
+END
+mp_newtype.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/51/trunk/Doc/includes/mp_newtype.py
+END
+mp_synchronize.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/51/trunk/Doc/includes/mp_synchronize.py
+END

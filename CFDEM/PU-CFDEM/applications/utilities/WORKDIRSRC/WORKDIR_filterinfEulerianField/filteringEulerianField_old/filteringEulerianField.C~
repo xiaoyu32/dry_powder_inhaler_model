@@ -1,0 +1,1028 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     |
+    \\  /    A nd           | Copyright (C) 2011-2013 OpenFOAM Foundation
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+License
+    This file is part of OpenFOAM.
+
+    OpenFOAM is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+    for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+
+Application
+    postCalc
+
+Description
+    Generic wrapper for calculating a quantity at each time
+
+\*---------------------------------------------------------------------------*/
+
+#include "filteringEulerianField.H"
+#include "timeSelector.H"
+#include "fvCFD.H"
+#include "./globalIndexStencils/CPCCellToCellStencil_mod.H"
+#include "singlePhaseTransportModel.H"
+#include "turbulenceModel.H"
+
+#include "cfdemCloud.H"
+#include "dataExchangeModel.H"
+#include "voidFractionModel.H"
+#include "locateModel.H"
+#include "averagingModel.H"
+#include "momCoupleModel.H"
+#include "forceModel.H"
+#include "IOModel.H"
+#include "interpolationCellPoint.H"
+
+//#include "SortableList.H"
+//#include "ListOps.H"
+
+#include "./ann/include/ANN/ANN.h"
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+namespace Foam
+{
+	
+    void constructfilter
+	(	     
+		const argList& args, 
+		const Time& runTime, 
+		const fvMesh& mesh,
+		const int& minfilterwidth,
+		const int& maxfilterwidth,
+		const int& filterincrement,
+		labelListListList& stencillistfilter
+	)
+
+	{				
+						
+		labelListList stencillist(mesh.nCells());
+		stencillistfilter.resize(maxfilterwidth*stencillist.size());
+		
+			for( int filterwidth = minfilterwidth; filterwidth <= maxfilterwidth; filterwidth += filterincrement )
+			{
+				
+				Info << "Creating stencil list for " << filterwidth << "X" << filterwidth << "X" << filterwidth << " filter " << endl;
+
+				CPCCellToCellStencil_mod stencil(mesh,filterwidth);
+
+				forAll(mesh.cells(),cellI)
+				{
+					stencillist[cellI] = stencil[cellI];
+				}
+
+				stencillistfilter[filterwidth] = stencillist;	
+		}				
+		
+		Info << "" << endl;
+						
+	}
+
+	void readEulerianVariables
+	(
+	    const argList& args, 
+	    const Time& runTime, 
+	    const fvMesh& mesh,
+		volScalarField& alpf_,
+		volVectorField& Uf_,
+		volScalarField& rho_,
+		volScalarField& p_	
+	)
+	{
+		// Read gas density
+		IOobject rhoheader
+		(
+		   "rho",
+		   runTime.timeName(),
+		   mesh,
+		   IOobject::MUST_READ	
+		);
+		   
+			Info<< " 	Reading rho" << endl;
+			volScalarField density_(rhoheader,mesh);	
+			
+			rho_ = density_ ;		
+
+		// Read volume fraction of gas
+		IOobject voidfractionheader
+		(
+		   "voidfraction",
+		   runTime.timeName(),
+		   mesh,
+		   IOobject::MUST_READ	
+		);
+
+			Info<< " 	Reading voidfraction" << endl;
+			volScalarField voidfraction_(voidfractionheader,mesh);	
+			alpf_ = voidfraction_ ;		
+
+		// Read gas velocity 
+		IOobject Uheader
+		(
+		   "U",
+		   runTime.timeName(),
+		   mesh,
+		   IOobject::MUST_READ	
+		);
+		   
+			Info<< " 	Reading U" << endl;
+			volVectorField U_(Uheader,mesh);
+			Uf_ = U_ ;
+			
+		
+		// Read gas pressure
+		IOobject pheader
+		(
+		   "p",
+		   runTime.timeName(),
+		   mesh,
+		   IOobject::MUST_READ	
+		);
+	   
+			Info<< " 	Reading Pg" << endl;
+			volScalarField Pg_(pheader,mesh);
+			p_ = Pg_ ;	
+	}
+	    
+    void filteringEulerianVariables
+	(
+		const argList& args, 
+		const Time& runTime, 
+		const fvMesh& mesh,
+		const labelListListList& stencillistfilter,
+		const int& filterwidth,
+		const volScalarField& voidfraction_,
+		const volVectorField& U_,
+		const volScalarField& p_,
+		volScalarField& baralpf_,
+		volVectorField& tildeUf_,
+		volScalarField& barPg_ 
+	)
+    {
+
+		char charfilterwidth[10]; 
+		
+		// Filtering volume fraction of gas phase		
+		Info<< " 	Filtering voidfraction" << endl;
+		sprintf(charfilterwidth, "barvoidfraction_%dX%dX%d",filterwidth,filterwidth,filterwidth);	
+
+		volScalarField barvoidfraction
+		(
+		    IOobject
+		    (
+		        charfilterwidth,
+		        runTime.timeName(),
+		        mesh,
+		        IOobject::NO_READ
+		    ),
+			voidfraction_	
+		);
+				
+		
+		forAll(mesh.cells(),cellI)
+		{
+		    scalar total_volume = 0;
+			barvoidfraction[cellI] = 0; 
+			const labelList fcellI = stencillistfilter[filterwidth][cellI]; 
+											
+			forAll(fcellI,filtercellI)
+			{
+				total_volume           +=       mesh.V()[fcellI[filtercellI]];
+				barvoidfraction[cellI] +=  voidfraction_[fcellI[filtercellI]] 
+					                          * mesh.V()[fcellI[filtercellI]]; 
+			}
+		        if( total_volume > 0 )
+			{
+				barvoidfraction[cellI] /= total_volume; 
+			}
+			else 
+			{
+				barvoidfraction[cellI] = 0;
+			}
+		} 
+		
+		Info<< " 	Writing filtered voidfraction" << endl;
+	    	barvoidfraction.write();		
+		baralpf_ = barvoidfraction;
+		
+		// Filtering gas velocity		
+		Info<< " 	Filtering U" << endl;
+		sprintf(charfilterwidth, "tildeU_%dX%dX%d",filterwidth,filterwidth,filterwidth);	
+		
+		volVectorField tildeU
+		(
+		    IOobject
+		    (
+		        charfilterwidth,
+		        runTime.timeName(),
+		        mesh,
+		        IOobject::NO_READ
+		    ),
+		    U_
+		);
+	
+		forAll(mesh.cells(),cellI)
+		{
+		    scalar total_volume = 0;
+			tildeU[cellI] = vector(0,0,0); 			
+			const labelList fcellI = stencillistfilter[filterwidth][cellI]; 
+											
+			forAll(fcellI,filtercellI)
+			{
+				total_volume  +=       mesh.V()[fcellI[filtercellI]];
+				tildeU[cellI] +=  voidfraction_[fcellI[filtercellI]] 
+					            *            U_[fcellI[filtercellI]] 
+								*      mesh.V()[fcellI[filtercellI]]; 
+			}
+	        if( total_volume > 0 )
+			{
+				tildeU[cellI] /= total_volume; 
+			
+				if ( barvoidfraction[cellI] > 0 )
+				{
+					tildeU[cellI] /= barvoidfraction[cellI];
+				}
+			}
+			else 
+			{
+				tildeU[cellI] = vector(0,0,0);
+			}
+		} 
+				
+		Info<< " 	Writing filtered U" << endl;
+	    	tildeU.write();		
+		tildeUf_ = tildeU;
+		
+		// Filtering volume fraction of gas phase		
+		Info<< " 	Filtering gas pressure" << endl;
+		
+		volScalarField barp
+		(
+		    IOobject
+		    (
+		        charfilterwidth,
+		        runTime.timeName(),
+		        mesh,
+		        IOobject::NO_READ
+		    ),
+			p_	
+		);
+		
+		forAll(mesh.cells(),cellI)
+		{
+		    	scalar total_volume = 0;
+			barp[cellI] = 0; 
+			const labelList fcellI = stencillistfilter[filterwidth][cellI]; 
+											
+			forAll(fcellI,filtercellI)
+			{
+				total_volume +=   mesh.V()[fcellI[filtercellI]];
+				barp[cellI]  +=         p_[fcellI[filtercellI]] 
+					            * mesh.V()[fcellI[filtercellI]]; 
+			}
+		        if( total_volume > 0 )
+			{
+				barp[cellI] /= total_volume; 
+			}
+			else 
+			{
+				barp[cellI] = 0;
+			}
+		} 
+		
+		Info<< " 	Writing filtered gas pressure" << endl;
+	    	barp.write();		
+		barPg_ = barp;	
+
+    }
+	
+	void DragForce
+	(
+		cfdemCloud& sm,
+		const volScalarField& alpf_,
+		const volVectorField& Uf_,
+		const volScalarField& rho_,
+		const int& npart_,
+		const scalar& dpart_,
+		const scalar& rhopart_,
+		const bool& verbose_,
+		const bool& parcelApproach_,
+		vectorField& DragForce_
+	)
+	{
+		
+		// get viscosity field
+		#ifdef comp
+		    const volScalarField nufField = sm.turbulence().mu()/rho_;
+		#else
+		    const volScalarField& nufField = sm.turbulence().nu();
+		#endif
+
+		// Local variables	
+		label  cellI=0;
+		vector drag(0,0,0);
+		scalar Volp(0);
+		vector Ufluid(0,0,0);
+		
+		vector position(0,0,0);
+		scalar voidfraction(1);
+		
+		vector Up(0,0,0);
+		vector Ur(0,0,0);
+		scalar ds(0);
+		
+		scalar nuf(0);
+		scalar rho(0);
+		scalar magUr(0);
+		scalar Rep(0);
+		scalar CD(0);
+		scalar alps(0);
+		scalar betaP(0);
+
+		interpolationCellPoint<scalar> voidfractionInterpolator_(alpf_);
+		interpolationCellPoint<vector> UInterpolator_(Uf_);	
+		
+		// 
+		DragForce_.resize(sm.numberOfParticles());
+			
+		for(int index = 0; index <  sm.numberOfParticles(); index++)
+	    	{
+			cellI = sm.cellIDs()[index][0];
+			drag = vector(0,0,0);
+			Volp = 0;
+			Ufluid = vector(0,0,0);
+			DragForce_[index] = vector(0,0,0);
+			    
+			if (cellI > -1) // particle Found
+			{
+				position = sm.position(index);
+				voidfraction = voidfractionInterpolator_.interpolate(position,cellI);
+				Ufluid = UInterpolator_.interpolate(position,cellI);
+
+				Up = sm.velocity(index);
+				Ur = Ufluid-Up;
+				ds = 2*sm.radius(index);
+
+				if(parcelApproach_)
+				{
+					ds = dpart_;
+				}		
+
+				nuf = nufField[cellI];
+				rho = rho_[cellI];
+				magUr = mag(Ur);
+				Volp = ds*ds*ds*M_PI/6;
+				alps = 1-voidfraction+SMALL;
+
+				if (magUr > 0)
+				{
+					// calc particle Re number
+					Rep = voidfraction*ds*magUr/(nuf+SMALL);
+
+					// calc CD
+					if (Rep < 1000)
+					{
+						CD = 24./Rep*(1.+0.15*pow(Rep,0.687))*pow(voidfraction,-2.65);
+					}
+					else
+					{
+						CD = 0.44*pow(voidfraction,-2.65); 
+					}  
+
+					// calc drag coefficient 
+					betaP = 3./4.*rho*CD*magUr/ds;  	
+
+					// calc particle's drag
+					drag = Volp*betaP*Ur;
+
+					// Parcel approach: drag on one particle multiply by number of particles in a parcel
+					if(parcelApproach_)
+					{
+						drag *= npart_;
+					}
+
+				}
+
+			}
+			
+			//if(verbose_ && index >=0 && index <2)
+			if(verbose_ && index <= 1)
+			{
+				Info << "" << endl;
+				Info << " index = " << index << endl;
+				Info << " position = " << position << endl; 
+				Info << " Up = " << Up << endl;
+				Info << " Ur = " << Ur << endl;
+				Info << " np = " << npart_ << endl;
+				Info << " dp = " << ds << endl;
+				Info << " dparcel = " << 2*sm.radius(index) << endl;
+				Info << " rho = " << rho << endl;
+				Info << " nuf = " << nuf << endl;
+				Info << " voidfraction = " << voidfraction << endl;
+				Info << " Rep = " << Rep << endl;
+				Info << " Volp = " << Volp << endl;
+				Info << " alps = " << alps << endl;
+				Info << " CD = " << CD << endl;
+				Info << " betaP = " << betaP << endl;		   		    
+				Info << " drag = " << drag << endl;
+				Info << " " << endl;
+			}
+			
+			for(int j=0;j<3;j++) DragForce_[index][j] = drag[j];		
+				
+		}	
+	}
+	
+	
+	
+	void filteredDragCoefficient
+	(
+		cfdemCloud& sm,
+		const bool& verbose_,
+		const volVectorField& tildeUf_,
+		const volVectorField& Uf_,
+		const volScalarField& barPg_,
+		const volScalarField& p_,
+		const vectorField& DragForce_,
+		vectorField& gii_
+	)
+	{
+		
+		// Local variables	
+		label  cellI=0;
+		vector gradPg_int(0,0,0);
+		vector gradbarPg_int(0,0,0);		
+		
+		vector position(0,0,0);	
+	    	vector Ufluid(0,0,0);
+		vector tildeUfluid(0,0,0);			
+		vector Up(0,0,0);
+		vector Ur(0,0,0);
+		
+		scalar ds(0);
+		scalar Volp(0);
+		
+		volVectorField gradp_ = fvc::grad(p_);
+		volVectorField gradbarPg_ = fvc::grad(barPg_);
+			   
+		interpolationCellPoint<vector> gradPgInterpolator_(gradp_);
+		interpolationCellPoint<vector> gradbarPgInterpolator_(gradbarPg_);
+		interpolationCellPoint<vector> UInterpolator_(Uf_);	
+		interpolationCellPoint<vector> tildeUInterpolator_(tildeUf_);	
+		   
+	    // Filtered drag coefficient 
+		vectorField barBetai_(sm.numberOfParticles());
+		gii_.resize(sm.numberOfParticles());
+		
+		for(int index = 0; index <  sm.numberOfParticles(); index++)
+	    {
+			cellI = sm.cellIDs()[index][0];
+			gradPg_int = vector(0,0,0);
+			gradbarPg_int = vector(0,0,0);
+			Volp = 0;
+			tildeUfluid = vector(0,0,0);
+			barBetai_[index] = vector(0,0,0);
+			
+			if( cellI > -1 )
+			{
+					position = sm.position(index);
+					gradPg_int = gradPgInterpolator_.interpolate(position,cellI);
+					gradbarPg_int = gradbarPgInterpolator_.interpolate(position,cellI);
+					Ufluid = UInterpolator_.interpolate(position,cellI);					
+					tildeUfluid = tildeUInterpolator_.interpolate(position,cellI);
+					Up = sm.velocity(index);
+					Ur = tildeUfluid-Up;
+					ds = 2*sm.radius(index);
+					Volp = ds*ds*ds*M_PI/6;
+					
+					
+					for(int j=0;j<3;j++) 
+					{
+						if ( Ur[j] != 0 )
+						{
+							barBetai_[index][j]  = ( - Volp * gradPg_int[j]
+								 		 + Volp * gradbarPg_int[j]
+										 + DragForce_[index][j] 
+										) / Ur[j];
+							
+							gii_[index][j] = barBetai_[index][j]
+								            / (DragForce_[index][j] / (Ufluid[j] - Up[j]) );
+									    
+							if(verbose_ && index <= 1)
+							{
+								Info << " barBetai_[" << index <<"]["<<j<<"] = " << barBetai_[index][j] << endl; 
+								Info << "      gii_[" << index <<"]["<<j<<"] = " << gii_[index][j]      << endl; 
+							}		    							
+						}
+					}		
+			}	
+
+				
+		}		
+		 
+   }
+   
+	void applyBins
+	(
+		cfdemCloud& sm,
+		const int& filterwidth,
+		const int& maxfilterwidth,
+		const int& nBin_,
+		const scalar& maxalpp_,
+		const volScalarField& baralpf_,
+		const volVectorField tildeUf_,
+		vectorField& gii_,
+		Field< Field < Field <scalar> > >& giiCondalppFilter_,
+		Field< Field < Field <scalar> > >& numbergiiCondalppFilter_		
+	)
+	{			
+		const scalar minalpp_ = 0.;
+		if ( maxalpp_ == 0)
+		{
+			FatalError << " Max. solid volumde fraction equal to = " << maxalpp_ << abort(FatalError);
+		}	
+		const scalar binDx_ = (maxalpp_-minalpp_)/nBin_;	
+		
+		interpolationCellPoint<scalar> baralpfInterpolator_(baralpf_);		
+		
+		label cellI = 0;
+		vector position(0,0,0);
+		scalar baralpp = 0;	
+
+		for(int index = 0; index <  sm.numberOfParticles(); index++)
+	    	{
+			cellI = sm.cellIDs()[index][0];
+			    
+			if (cellI > -1) // particle Found
+			{
+				position = sm.position(index);
+				baralpp = 1.-baralpfInterpolator_.interpolate(position,cellI);
+	    	 		label binI = floor(baralpp/binDx_);			
+				
+				for(int j=0;j<3;j++) 
+				{	
+					giiCondalppFilter_[binI][j][filterwidth] += gii_[index][j];
+					numbergiiCondalppFilter_[binI][j][filterwidth] += 1;
+				}
+				
+			}
+		}
+		
+		
+					
+				
+	} 
+
+	void writeBins
+	(
+	    	const fvMesh& mesh,
+		const int& nBin_,
+		const scalar& maxalpp_,
+		const fileName outputRelativePath_,		
+		const int& minfilterwidth,
+		const int& maxfilterwidth,
+		const int& filterincrement,
+		const Field< Field < Field <scalar> > >& giiCondalppFilter_,
+		Field< Field < Field <scalar> > >& numbergiiCondalppFilter_
+	)		
+	{
+
+		// Create output folder	
+		mkDir(mesh.time().path()/outputRelativePath_);
+	
+/*
+		//
+		fileName outputFile("h_vs_baralpp");
+		OFstream str(mesh.time().path()/outputRelativePath_/outputFile);
+		
+		// Number of realization
+		fileName outputFile2("Nrealization");
+		OFstream str2(mesh.time().path()/outputRelativePath_/outputFile2);
+
+/*
+		Info << " 			   " << endl; 		
+		Info << " Writing the file " << outputFile 
+		     << " into the folder: " << mesh.time().path()/outputRelativePath_ << endl;
+*/		
+		// Filename
+		char charfilterwidth[20]; 
+		char charfilterwidthN[20]; 
+		
+		for( int filterwidth = minfilterwidth; filterwidth <= maxfilterwidth; filterwidth += filterincrement )
+		{
+		
+			sprintf(charfilterwidth, "h_vs_baralpp_%dX%dX%d",filterwidth,filterwidth,filterwidth);
+			fileName outputFileFilter(charfilterwidth);
+			OFstream str_gii(mesh.time().path()/outputRelativePath_/outputFileFilter);
+			
+			sprintf(charfilterwidthN, "Nrealization_%dX%dX%d",filterwidth,filterwidth,filterwidth);
+			fileName outputFileFilterN(charfilterwidthN);
+			OFstream str_nreal(mesh.time().path()/outputRelativePath_/outputFileFilterN);	
+			
+			str_gii   << "# baralpp \t H_x \t H_y \t H_z"  << nl;
+			str_nreal << "# baralpp \t Nx  \t Ny  \t H_z"  << nl;
+			
+			
+			for( int i = 0; i < nBin_; i++ )
+			{
+
+
+				str_nreal << (i+1./2.)*maxalpp_/nBin_  << " " << numbergiiCondalppFilter_[i][0][filterwidth] 
+				                        	       << " " << numbergiiCondalppFilter_[i][1][filterwidth] 
+								       << " " << numbergiiCondalppFilter_[i][2][filterwidth]		<< nl;
+								       
+				for(int j=0;j<3;j++) 
+				{				  
+					if ( numbergiiCondalppFilter_[i][j][filterwidth] == 0 ) numbergiiCondalppFilter_[i][j][filterwidth] = 1; 
+ 				}					       		
+
+				str_gii  <<  (i+1./2.)*maxalpp_/nBin_  << " " << giiCondalppFilter_[i][0][filterwidth] / numbergiiCondalppFilter_[i][0][filterwidth] 
+					 	   		       << " " << giiCondalppFilter_[i][1][filterwidth] / numbergiiCondalppFilter_[i][1][filterwidth] 
+								       << " " << giiCondalppFilter_[i][2][filterwidth] / numbergiiCondalppFilter_[i][2][filterwidth] 	<< nl;					  															
+
+			} 
+				
+					
+		}
+		
+		
+	}
+	
+	void ParticleCoarsening
+	(
+		cfdemCloud& sm,
+		const int& nparticle_,
+		const bool verbose_			
+	)
+	{		
+
+		// Number of parcel
+		const int nParcel =  sm.numberOfParticles()/nparticle_;
+		// Parcel diameter, monodisperse case index=0
+		int index = 0;
+		const scalar dParcel = pow(nparticle_,1./3.)*2*sm.radius(index);
+		
+		Info << " Number of particles in a parcel = " << nparticle_ << endl;
+		Info << " Number of parcels = " << nParcel << endl;
+		Info << " Parcel diameter = " << dParcel << endl;
+		Info << " Number of particles not used for parcels = " <<  sm.numberOfParticles() - nParcel*nparticle_ << endl; 
+		
+		// Squared radius
+		const scalar sqRad = dParcel/2.; //pow(dParcel/2.,2.);	
+		
+		// Number of particles in a parcel
+		int k = nparticle_; 		
+				
+		// Dimensions, exact OR approximate  
+		int dim =3; double eps = 0;
+						
+		// Number of points
+		int nPts;
+		nPts =  sm.numberOfParticles();		
+
+		// Data points
+		ANNpointArray dataPts;
+		// Query points
+		ANNpoint queryPt;
+		
+		ANNidxArray	nnIdx;			// 	near neighbour indices
+		ANNdistArray 	dists;			//	near neighbour distances
+		ANNkd_tree* 	kdTree;			//	search structure
+		
+		// Allocate 
+		queryPt = annAllocPt(dim);
+		dataPts = annAllocPts(nPts, dim);
+		nnIdx = new ANNidx[k];
+		dists = new ANNdist[k];		
+		
+		// Create particle list
+		labelList particleList(sm.numberOfParticles());				
+		for(int index = 0; index <  sm.numberOfParticles(); index++)
+	    {			
+				dataPts[index][0] = sm.position(index).x();		
+				dataPts[index][1] = sm.position(index).y();		
+				dataPts[index][2] = sm.position(index).z();
+				particleList[index] = index;			
+		}
+				
+		kdTree = new ANNkd_tree(dataPts, nPts, dim);
+
+		// Create parcel list
+		labelListList parcelList(nParcel,particleList);
+		label parcelI = 0;
+		
+		for(int index = 0; index <  sm.numberOfParticles(); index++)
+		{				
+						
+			if ( particleList[index] > 0 )
+				{					
+					
+					if (verbose_) Info << " Parcel = " << parcelI << endl;
+					
+					queryPt[0] = sm.position(index).x();
+					queryPt[1] = sm.position(index).y();
+					queryPt[2] = sm.position(index).z();
+	
+					kdTree->annkFRSearch(
+					                	queryPt,			// query point					
+								sqRad,				// squared radius
+								k,				// number of the near neighbours to return
+								nnIdx,				// nearest neighbor array
+								dists,				// dist to near neighbours
+								eps			);					
+							
+					if (verbose_) Info << "NN:  Index  Distance\n";
+					
+					for (int i = 0; i < k; i++)
+					{
+						dists[i] = sqrt(dists[i]); 
+						if (verbose_) Info << index << " " << i << " " << nnIdx[i] << " " << dists[i] << "\n";
+						particleList[nnIdx[i]] = -1 ;
+						parcelList[parcelI][i] = i ;
+						
+						// Parcel center of mass
+						//parcelCenter[parcelI][0] += sm.position(i).x();
+						//parcelCenter[parcelI][1] += sm.position(i).y();
+						//parcelCenter[parcelI][2] += sm.position(i).z();  
+					}
+					
+					if ( k == nparticle_ ) parcelI += 1;
+					
+					if ( parcelI == nParcel ) 
+						{
+								goto nParcelCheck;
+						}
+															
+				}	
+				
+		}
+		
+		nParcelCheck:
+			Info << " " << endl;
+					
+	}
+		
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+int main(int argc, char *argv[])
+{
+	
+
+	Foam::timeSelector::addOptions();
+	#   include "addRegionOption.H"
+	Foam::argList::addBoolOption
+	(
+	"noWrite",
+	"suppress writing results"
+	);
+	#include "addDictOption.H"
+
+	#include "setRootCase.H"
+	#include "createTime.H"
+	Foam::instantList timeDirs = Foam::timeSelector::select0(runTime, args);
+	#include "createNamedMesh.H"
+
+	#include "createFields.H" 	 
+
+	// Create particle cloud			
+	cfdemCloud particleCloud(mesh);
+	
+	particleCloud.reAllocArrays();
+
+	double **positions;
+	double **velocities;
+	double **radii;
+	double **cellID;
+
+	particleCloud.dataExchangeM().allocateArray(positions,0.,3);
+	particleCloud.dataExchangeM().allocateArray(velocities,0.,3);
+	particleCloud.get_radii(radii); 
+	particleCloud.get_cellIDs(cellID);  
+	
+	// Post-processing filtered drag dictionary 
+	// Read dictionary + dictionaryProps 
+	const dictionary dict(particleCloud.couplingProperties());	
+	// Wen&Yu Drag
+	const dictionary propsDict(dict.subDict("PostProcessingFilteredDrag"));					
+	bool verbose(false);
+	int npart(1);
+	scalar dpart(1.0); 
+	scalar rhopart(1.0);	
+	bool parcelApproach(false);
+	const int DEM_dump_Interval(readScalar(propsDict.lookup("DEM_dump_Interval")));	
+	const int nBin(readScalar(propsDict.lookup("nBin")));
+	const scalar maxalpp(readScalar(propsDict.lookup("Max_alpp")));
+    	fileName outputRelativePath(propsDict.lookup("outputRelativePath"));
+	bool particleCoarsening(false);
+	bool verboseParticleCoarsening(false);
+	int npartParticleCoarsening(1);
+	if(propsDict.found("verbose")) verbose = true;
+	if(propsDict.found("parcel")) 
+	{
+		parcelApproach = true;
+		npart   = readScalar(propsDict.lookup("npart"));
+		dpart   = readScalar(propsDict.lookup("dpart"));
+		rhopart = readScalar(propsDict.lookup("rhopart"));
+	}	
+	if(propsDict.found("ParticleCoarsening")) 
+	{
+		particleCoarsening = true;
+		if(propsDict.found("verboseParticleCoarsening")) verboseParticleCoarsening = true; 
+		npartParticleCoarsening = readScalar(propsDict.lookup("npartParticleCoarsening"));
+	}
+
+	// Filter parameters
+	#include "FilterVariables.H"	
+
+	Foam::constructfilter
+	(
+		args,
+		runTime,
+		mesh, 
+		minFilterWidth, 
+		maxFilterWidth,
+		FilterIncrement, 
+		StencilListFilter
+	 );  		
+			
+	//forAll(timeDirs, timeI)
+	int timeI = 2;
+	{
+  
+		runTime.setTime(timeDirs[timeI], timeI);
+
+		Foam::Info<< "Time = " << runTime.timeName() << Foam::endl;
+
+		mesh.readUpdate();
+
+		Foam::readEulerianVariables
+		(
+			args, 
+			runTime, 
+			mesh,
+			voidfraction,
+			U,
+			rho,
+			p
+		);	
+
+		int count = timeI * DEM_dump_Interval;
+
+		// timeI > 0 (particle are not initialised in the folder "0")
+		if ( timeI > 0 )
+		{
+			Info<< " " << endl;
+			particleCloud.dataExchangeM().getData("v","vector-atom",velocities,count);
+			Info<< " 	Reading particle velocities" << endl;
+			Info<< " " << endl;
+			
+			particleCloud.dataExchangeM().getData("x","vector-atom",positions,count);
+			Info<< " 	Reading particle positions" << endl;
+			Info<< " " << endl;
+
+			particleCloud.dataExchangeM().getData("radius","scalar-atom",radii,count);
+			Info<< " 	Reading particle radius" << endl;		
+			Info<< " " << endl;
+
+		}
+		
+		particleCloud.locateM().findCell(NULL,positions,cellID,particleCloud.numberOfParticles());
+		particleCloud.setPos(positions);
+		particleCloud.setVel(velocities);
+		
+		
+		if(verbose)
+		{
+			int index = 0;
+			Info << "" << endl;
+			Info << " index  = " << index << endl;
+			Info << " rp     = " << particleCloud.radius(index) << endl;
+			Info << " Vp     = " << particleCloud.velocity(index) << endl;
+			Info << " Xp     = " << particleCloud.position(index) << endl;
+			Info << " CellID = " << particleCloud.particleCell(index) << endl;
+			Info << " Ug     = " << U[particleCloud.particleCell(index)] << endl;
+			Info << "" << endl;
+		}
+		
+		// 	Call DragForce function for the drag force	
+		Foam::DragForce
+		(
+			particleCloud,
+			voidfraction,
+			U,
+			rho,
+			npart,
+			dpart,
+			rhopart,
+			verbose,
+			parcelApproach,
+			DragForce
+		);
+		
+		//	Particle coarsening
+		if ( particleCoarsening )
+		{
+			Foam::ParticleCoarsening
+			(
+				particleCloud,
+				npartParticleCoarsening,
+				verboseParticleCoarsening			
+			);		
+		}
+
+
+		for(int FilterWidth = minFilterWidth; FilterWidth <= maxFilterWidth; FilterWidth += FilterIncrement )
+		{
+			Info << " " << endl;
+			Info << " Filter size = " << FilterWidth << "X" << FilterWidth << "X" << FilterWidth << endl;
+
+			Foam::filteringEulerianVariables
+			(
+				args, 
+				runTime, 
+				mesh,
+				StencilListFilter,
+				FilterWidth,
+				voidfraction,
+				U,
+				p,
+				baralpf,				
+				tildeUf,
+				barPg
+			);							
+
+			Foam::filteredDragCoefficient
+			(
+				particleCloud,
+				verbose,
+				U,
+				tildeUf,
+				barPg,
+				p,
+				DragForce,
+				gii
+			);
+											
+			Foam::applyBins
+			(				
+				particleCloud,
+				FilterWidth,
+				maxFilterWidth,
+				nBin,
+				maxalpp,
+				baralpf,
+				tildeUf,
+				gii,
+				giiCondalppFilter,
+				numbergiiCondalppFilter
+			);						
+
+		}
+
+	}
+	
+	// Write bins		
+	Foam::writeBins
+	(
+		mesh,
+		nBin,
+		maxalpp,		
+		outputRelativePath,
+		minFilterWidth, 
+		maxFilterWidth,
+		FilterIncrement,
+		giiCondalppFilter,
+		numbergiiCondalppFilter		
+	);			
+	
+	particleCloud.dataExchangeM().destroy(positions,3);
+	particleCloud.dataExchangeM().destroy(velocities,3);
+
+	Foam::Info	<<  " " << Foam::endl;    
+	Foam::Info	<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
+        		<< "  ClockTime = " << runTime.elapsedClockTime() << " s"
+        		<< nl << Foam::endl;
+
+	Foam::Info<< "End\n" << Foam::endl;
+		
+
+    return 0;
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,6 @@
+OBJECTS = \
+$(OBJECTS_DIR)/locateModelPU.o\
+$(OBJECTS_DIR)/newLocateModelPU.o\
+$(OBJECTS_DIR)/standardSearchPU.o\
+$(OBJECTS_DIR)/engineSearchPU.o\
+$(OBJECTS_DIR)/cfdemCloudPU.o

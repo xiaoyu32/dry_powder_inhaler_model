@@ -1,0 +1,5 @@
+include newPolarizationModel.dep
+include polarizationModel.dep
+include newPermittivityModel.dep
+include permittivityModel.dep
+include cfdemCloudChargePolarization.dep

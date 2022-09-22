@@ -1,0 +1,6 @@
+LOCAL_OBJECTS = \
+locateModelPU.o\
+newLocateModelPU.o\
+standardSearchPU.o\
+engineSearchPU.o\
+cfdemCloudPU.o

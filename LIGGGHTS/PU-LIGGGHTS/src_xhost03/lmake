@@ -1,0 +1,5 @@
+
+make yes-rigid mode=lib fedora_fpic
+
+mv liblammps_fedora_fpic.a liblmp_fedora_fpic.a
+

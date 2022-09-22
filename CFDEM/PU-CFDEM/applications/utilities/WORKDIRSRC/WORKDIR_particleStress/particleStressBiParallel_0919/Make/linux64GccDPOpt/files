@@ -1,0 +1,8 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+outputWrite.C
+calcCollisionalForce.C
+particleStressBiParallel.C
+
+EXE = $(CFDEM_APP_DIR)/particleStressBiParallel

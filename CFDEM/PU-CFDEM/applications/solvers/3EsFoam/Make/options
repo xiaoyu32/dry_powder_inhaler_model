@@ -1,0 +1,23 @@
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/transportModels/incompressible/lnInclude \
+    -IturbulenceModel \
+    -IkineticTheoryModels/lnInclude \
+    -IelectrostaticsKTModels/lnInclude \
+    -IinterfacialModels/lnInclude \
+    -IphaseModel/lnInclude \
+    -Iaveraging \
+    -IderivedChargeFvPatchFields/lnInclude \
+    -DFULLDEBUG -g -O0
+
+EXE_LIBS = \
+    -L$(FOAM_USER_LIBBIN) \
+    -lEulerianInterfacialModels \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lincompressibleTransportModels \
+    -lphaseModel \
+    -lkineticTheoryModel \
+    -lelectrostaticsKTModel \
+    -lMeanCharge
+    

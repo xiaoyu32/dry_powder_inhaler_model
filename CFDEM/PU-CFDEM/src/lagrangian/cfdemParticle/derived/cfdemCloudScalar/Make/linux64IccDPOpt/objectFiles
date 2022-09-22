@@ -1,0 +1,4 @@
+OBJECTS = \
+$(OBJECTS_DIR)/cfdemCloudScalar.o\
+$(OBJECTS_DIR)/passiveScalarDensityModel.o\
+$(OBJECTS_DIR)/newPassiveScalarDensityModel.o

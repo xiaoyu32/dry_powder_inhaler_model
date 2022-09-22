@@ -1,0 +1,13 @@
+make clean-all
+
+rm -rf liblammps_mpi.a
+rm -rf liblmp_fedora_fpic.a
+rm -rf lmp_fedora_fpic
+rm -rf  lmp_mpi
+
+sh Make.sh models
+
+make -j16 yes-rigid  fedora_fpic
+
+mv liblammps_fedora_fpic.a liblmp_fedora_fpic.a
+

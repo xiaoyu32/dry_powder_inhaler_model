@@ -1,0 +1,3 @@
+LOCAL_OBJECTS = \
+createParcels.o\
+parcelScaleGranularTemperature.o

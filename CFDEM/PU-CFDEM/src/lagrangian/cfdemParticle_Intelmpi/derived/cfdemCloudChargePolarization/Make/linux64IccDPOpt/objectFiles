@@ -1,0 +1,6 @@
+OBJECTS = \
+$(OBJECTS_DIR)/newPolarizationModel.o\
+$(OBJECTS_DIR)/polarizationModel.o\
+$(OBJECTS_DIR)/newPermittivityModel.o\
+$(OBJECTS_DIR)/permittivityModel.o\
+$(OBJECTS_DIR)/cfdemCloudChargePolarization.o

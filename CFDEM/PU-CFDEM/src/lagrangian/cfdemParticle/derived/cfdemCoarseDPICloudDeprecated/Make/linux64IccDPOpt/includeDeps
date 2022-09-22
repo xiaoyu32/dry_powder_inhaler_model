@@ -1,0 +1,5 @@
+include apiDensityModel.dep
+include cfdemCoarseDPICloud.dep
+include newAPIDensityModel.dep
+include $(CFDEM_SRC_DIR)/subModels/apiTransferModel/vanWachem/vanWachem.dep
+include $(CFDEM_SRC_DIR)/subModels/apiTransferModel/noTransfer/noTransfer.dep

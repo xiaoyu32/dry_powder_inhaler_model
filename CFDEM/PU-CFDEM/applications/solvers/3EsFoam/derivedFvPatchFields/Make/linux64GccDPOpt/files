@@ -1,0 +1,7 @@
+# 1 "files"
+# 1 "<command-line>"
+# 1 "files"
+./particleSlipJohnsonJackson/particleSlipJohnsonJacksonFvPatchVectorField.C
+./particleThetaJohnsonJackson/particleThetaJohnsonJacksonFvPatchScalarField.C
+
+LIB = $(FOAM_USER_LIBBIN)/libJohnsonJackson

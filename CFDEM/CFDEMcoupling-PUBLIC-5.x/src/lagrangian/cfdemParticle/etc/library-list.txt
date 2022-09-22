@@ -1,0 +1,4 @@
+lagrangian/cfdemParticle/dir
+lagrangian/cfdemParticleComp/dir
+eulerian/scalarTransportModelsCFDEM/dir
+eulerian/fvOptionsCFDEM/dir
